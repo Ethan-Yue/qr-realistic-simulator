@@ -1,0 +1,358 @@
+{
+  "combo_id": 17,
+  "carrier": "metal",
+  "carrier_cn": "金属",
+  "method": "laser_mark",
+  "method_cn": "激光打标",
+  "sample_index": 0,
+  "seed": 2070265061,
+  "stage_seeds": {
+    "clean": 2070265061,
+    "damage": 3966617315,
+    "capture": 3721170467,
+    "qr": 2387094181,
+    "layout": null
+  },
+  "seed_scheme": "SeedSequence(base_seed, combo_id, sample_index, stage)",
+  "qr_structure": {
+    "version": 4,
+    "error_correction": "M",
+    "border_modules": 4,
+    "payload_length": 71,
+    "module_count_with_border": 41,
+    "source_module_pitch_px": 11,
+    "source_side_px": 451
+  },
+  "payload_mode": "variable",
+  "payload_alphabet": "alphanumeric",
+  "qr_source": "QRDATASET://QWM74/.Q8.Z:DT-LHAVSOE-OU451O1T5355WF.K/PP.KO1ZY46-HUI4M:Y/",
+  "qr_payload": "QRDATASET://QWM74/.Q8.Z:DT-LHAVSOE-OU451O1T5355WF.K/PP.KO1ZY46-HUI4M:Y/",
+  "qr_input_info": null,
+  "quad_xy": [
+    [
+      56.40999984741211,
+      85.87999725341797
+    ],
+    [
+      419.0199890136719,
+      88.7300033569336
+    ],
+    [
+      417.1099853515625,
+      455.6400146484375
+    ],
+    [
+      64.69000244140625,
+      457.2099914550781
+    ]
+  ],
+  "layout_profile": "closeup",
+  "layout_reference": null,
+  "mask_definition": "qr_masks: QR成码模块的几何范围；damage_masks: 污损算子的几何范围（拍摄几何变换后、光学扩散前）；visible_change_masks: 配对拍摄图像任一通道差值>5的像素范围（含模糊/JPEG扩散）。255=范围内，0=范围外",
+  "visible_change_threshold_u8": 5,
+  "visible_change_area_ratio": 0.006946563720703125,
+  "image_size": [
+    512,
+    512
+  ],
+  "clean_baseline": false,
+  "paired_clean_reference": true,
+  "white_module_mode": "transparent",
+  "contrast_control": {
+    "qr_color_bgr": [
+      245,
+      245,
+      245
+    ],
+    "background_median_bgr": [
+      61.0,
+      72.0,
+      83.0
+    ],
+    "contrast_ratio": 8.1545,
+    "min_contrast": 3.0,
+    "contrast_passes": true,
+    "rendered_contrast_ratio": 7.1987,
+    "rendered_contrast_passes": true,
+    "used_light_plate": false,
+    "background_resample_attempts": 1,
+    "white_module_mode_requested": "transparent",
+    "white_modules_transparent": true,
+    "white_underlay_type": "none",
+    "white_module_mode_reason": "forced_transparent",
+    "render_profile": "material",
+    "surface_coupling": {
+      "surface_family": "laser_surface",
+      "surface_applied": true,
+      "substrate_color_fraction": 0.075,
+      "texture_gain": 3.5532,
+      "grain_gain": 0.7106,
+      "edge_sigma_px": 0.47,
+      "edge_min_coverage": 0.91
+    },
+    "background_source": {
+      "source_kind": "background_library_image",
+      "source_path": "metal/polyhaven_metal_plate_02_diff_1k.jpg",
+      "source_sha256": "6e80877d0e9d5973d96298c6091df7ace906b0a6760afc4f3592e4855f3f1d4c",
+      "source_size_hw": [
+        1024,
+        1024
+      ],
+      "crop_xywh": [
+        0,
+        0,
+        1024,
+        1024
+      ],
+      "output_size_hw": [
+        512,
+        512
+      ]
+    }
+  },
+  "render_profile": "material",
+  "capture": {
+    "mode": "challenging",
+    "carrier": "metal",
+    "image_size_hw": [
+      512,
+      512
+    ],
+    "perspective_matrix": [
+      [
+        1.0073878765106201,
+        0.027806034311652184,
+        -12.708977699279785
+      ],
+      [
+        0.010756777599453926,
+        1.0536069869995117,
+        6.8409504890441895
+      ],
+      [
+        3.334130087750964e-05,
+        7.936728798085824e-05,
+        1.0
+      ]
+    ],
+    "source_corners_xy": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        511.0,
+        0.0
+      ],
+      [
+        511.0,
+        511.0
+      ],
+      [
+        0.0,
+        511.0
+      ]
+    ],
+    "destination_corners_xy": [
+      [
+        -12.708977699279785,
+        6.8409504890441895
+      ],
+      [
+        493.6556396484375,
+        12.130983352661133
+      ],
+      [
+        488.1600036621094,
+        520.7393188476562
+      ],
+      [
+        1.4414455890655518,
+        523.9830932617188
+      ]
+    ],
+    "quad_xy": [
+      [
+        56.40966796875,
+        85.87913513183594
+      ],
+      [
+        419.01873779296875,
+        88.72570037841797
+      ],
+      [
+        417.10791015625,
+        455.6395263671875
+      ],
+      [
+        64.68527221679688,
+        457.2127380371094
+      ]
+    ],
+    "lighting": {
+      "ambient": 0.8234826232938607,
+      "gradient_xy": [
+        -0.14890768429099524,
+        0.09560919641677648
+      ],
+      "vignette": 0.026161615275154836,
+      "white_balance_bgr": [
+        1.018987774848938,
+        1.0,
+        0.9813660383224487
+      ],
+      "highlight": {
+        "enabled": true,
+        "strength": 0.1845036651203763,
+        "center_xy_fraction": [
+          0.17892619515300703,
+          0.46905261315748836
+        ],
+        "radii_fraction": [
+          0.19306375395804498,
+          0.4247397084264306
+        ],
+        "angle_degrees": -41.250810751341845
+      }
+    },
+    "exposure_ev": 1.1922807500568924,
+    "strong_glare": {
+      "enabled": true,
+      "strength_linear": 1.4036591730548278,
+      "center_xy_fraction": [
+        0.7437352937510673,
+        0.6750240012304132
+      ],
+      "angle_degrees": -0.1591714401236004,
+      "model": "elliptical lobe plus narrow streak"
+    },
+    "motion_blur": {
+      "enabled": true,
+      "length_px": 9,
+      "angle_degrees": 81.5122267456604
+    },
+    "near_white_fraction_clean": 0.09241104125976562,
+    "blur_sigma_px": 1.0687355639629272,
+    "gaussian_noise_sigma_srgb": 2.1579139174679005,
+    "shared_noise_realization": true,
+    "jpeg_quality": 84,
+    "mask_scope": "geometric footprint before optical spread"
+  },
+  "damage_enabled": true,
+  "damage_mode_requested": "random",
+  "damage_spatial_mode": "full_canvas",
+  "damage_severity_requested": "medium",
+  "target_qr_damage_ratio": null,
+  "damage_candidate_attempts": 1,
+  "damage_candidate_seed": 3966617315,
+  "qr_damage_ratio_after_capture": 0.02427685950413223,
+  "damage_area_ratio_after_capture": 0.010517120361328125,
+  "damage_random_counts": {
+    "common": [
+      1,
+      2
+    ],
+    "carrier": [
+      0,
+      1
+    ],
+    "method": [
+      0,
+      1
+    ]
+  },
+  "damage_config_path": null,
+  "damage": {
+    "carrier": "金属",
+    "method": "激光打标",
+    "spatial_mode": "full_canvas",
+    "damage_roi_xyxy": null,
+    "damage_roi_feather_px": 0,
+    "applied_plan_area_reference": "full_canvas",
+    "severity_default": "medium",
+    "mode": "random",
+    "damage_types": [
+      "water_stain",
+      "dust"
+    ],
+    "damage_categories": [
+      "common",
+      "common"
+    ],
+    "damage_layer_count": 2,
+    "damage_area_ratio": 0.01094818115234375,
+    "qr_damage_ratio": 0.02412698412698413,
+    "applied_plan": [
+      {
+        "name": "water_stain",
+        "category": "common",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.004657745361328125,
+        "params": {
+          "count": 1,
+          "radius_ratio": [
+            0.025,
+            0.09
+          ],
+          "ring_width_px": 5
+        }
+      },
+      {
+        "name": "dust",
+        "category": "common",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.00632476806640625,
+        "params": {
+          "count": 57,
+          "radius_px": [
+            1.0,
+            4.0
+          ],
+          "opacity": 0.34921081584370217,
+          "qr_bias": 0.4
+        }
+      }
+    ],
+    "layers": [
+      {
+        "name": "water_stain",
+        "category": "common",
+        "area_ratio": 0.004657745361328125,
+        "qr_overlap_ratio": 0.008713738368910783,
+        "params": {
+          "count": 1,
+          "radius_ratio": [
+            0.025,
+            0.09
+          ],
+          "ring_width_px": 5
+        }
+      },
+      {
+        "name": "dust",
+        "category": "common",
+        "area_ratio": 0.00632476806640625,
+        "qr_overlap_ratio": 0.015544608648056924,
+        "params": {
+          "count": 57,
+          "radius_px": [
+            1.0,
+            4.0
+          ],
+          "opacity": 0.34921081584370217,
+          "qr_bias": 0.4
+        }
+      }
+    ]
+  },
+  "outputs": {
+    "clean_image": "clean_images/000000.png",
+    "damaged_image": "damaged_images/000000.png",
+    "qr_mask": "qr_masks/000000.png",
+    "damage_mask": "damage_masks/000000.png",
+    "visible_change_mask": "visible_change_masks/000000.png",
+    "qr_original": "qr_original/000000.png"
+  }
+}

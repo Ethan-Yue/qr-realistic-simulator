@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "purpose": "Small traceable material-image subset, not a full 15-carrier library or physical QR-photo collection",
+  "license_review_date": "2026-10-07",
+  "poly_haven_license": "https://polyhaven.com/license",
+  "poly_haven_texture_standard": "https://docs.polyhaven.com/en/technical-standards/textures",
+  "assets": [
+    {
+      "relative_path": "metal/polyhaven_metal_plate_02_diff_1k.jpg",
+      "sha256": "6e80877d0e9d5973d96298c6091df7ace906b0a6760afc4f3592e4855f3f1d4c",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 625917,
+      "carrier": "metal",
+      "source": "Poly Haven",
+      "asset_id": "metal_plate_02",
+      "asset_title": "Metal Plate 02",
+      "source_page": "https://polyhaven.com/a/metal_plate_02",
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/metal_plate_02/metal_plate_02_diff_1k.jpg",
+      "creator": {
+        "Rob Tuytel": "All"
+      },
+      "license": "CC0 1.0",
+      "capture_provenance": "Poly Haven photo-based texture standard; individual camera capture not independently audited",
+      "source_md5": "531b7e067dc537e0b3c7962175e04ffd"
+    },
+    {
+      "relative_path": "wood/polyhaven_ash_veneer_diff_1k.jpg",
+      "sha256": "13fd87c8b0a5cc1d4e408fb75b3eb629417ea6b1aaf1672b5adf993640486673",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 592273,
+      "carrier": "wood",
+      "source": "Poly Haven",
+      "asset_id": "ash_veneer",
+      "asset_title": "Ash Veneer",
+      "source_page": "https://polyhaven.com/a/ash_veneer",
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/ash_veneer/ash_veneer_diff_1k.jpg",
+      "creator": {
+        "Jenelle van Heerden": "All"
+      },
+      "license": "CC0 1.0",
+      "capture_provenance": "Poly Haven photo-based texture standard; individual camera capture not independently audited",
+      "source_md5": "5be48b4be87620998cfaee5a4281169d"
+    },
+    {
+      "relative_path": "textile/polyhaven_cotton_jersey_diff_1k.jpg",
+      "sha256": "0f1b790e4087223275aaa6fdffdd46a556a26d2af72cd811acf72ba9c21ec1f6",
+      "width": 1024,
+      "height": 1025,
+      "bytes": 581360,
+      "carrier": "textile",
+      "source": "Poly Haven",
+      "asset_id": "cotton_jersey",
+      "asset_title": "Cotton Jersey",
+      "source_page": "https://polyhaven.com/a/cotton_jersey",
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cotton_jersey/cotton_jersey_diff_1k.jpg",
+      "creator": {
+        "colormass": "Photography",
+        "Rico Cilliers": "Processing"
+      },
+      "license": "CC0 1.0",
+      "capture_provenance": "Poly Haven photo-based texture standard; individual camera capture not independently audited",
+      "source_md5": "d2f4493fdd48634b50d40f810ce9deb7"
+    },
+    {
+      "relative_path": "ceramic/polyhaven_anti_skid_tiles_diff_1k.jpg",
+      "sha256": "c46ec19caf6c82d70b96603de7ff5ad7c244cf6df3bc178f320ed493e61ee752",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 575833,
+      "carrier": "ceramic",
+      "source": "Poly Haven",
+      "asset_id": "anti_skid_tiles",
+      "asset_title": "Anti Skid Tiles",
+      "source_page": "https://polyhaven.com/a/anti_skid_tiles",
+      "download_url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/anti_skid_tiles/anti_skid_tiles_diff_1k.jpg",
+      "creator": {
+        "Amal Kumar": "All"
+      },
+      "license": "CC0 1.0",
+      "capture_provenance": "Poly Haven photo-based texture standard; individual camera capture not independently audited",
+      "source_md5": "03fcfd541a0549a4fd7ad3e0f00151c9"
+    },
+    {
+      "relative_path": "paper/wikimedia_old_paper_texture.jpg",
+      "sha256": "c7e43f042fb79b7437ecc5970933d7c62921ac9b1951321c3a6bacf4e459b99b",
+      "width": 6927,
+      "height": 4441,
+      "bytes": 6749988,
+      "carrier": "paper",
+      "filename": "wikimedia_old_paper_texture.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D1%83%D1%80%D0%B0_%D0%B1%D1%83%D0%BC%D0%B0%D0%B3%D0%B8.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D1%83%D1%80%D0%B0_%D0%B1%D1%83%D0%BC%D0%B0%D0%B3%D0%B8.jpg",
+      "creator": "Iroi su",
+      "license": "CC0 1.0",
+      "origin": "Old-paper texture described as creator's own work on the source page",
+      "source": "Wikimedia Commons"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+Thumbs.db
+
+# Generated runs and local input collections
+qr/outputs*/
+qr/_qa_*/
+qr/_smoke_*/
+qr/_*probe*/
+qr/assets/backgrounds/
+qr/assets/backgrounds_rejected/
+qr/assets/model_background_atlases/
+qr/assets/qr_input/*
+!qr/assets/qr_input/.gitkeep
+真实QR码/
+素材/
+paper/real_dataset_audit/01/
+
+# Large working formats
+*.tif
+*.tiff

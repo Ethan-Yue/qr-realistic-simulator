@@ -1,0 +1,122 @@
+{
+  "engineering_50": {
+    "scope": "synthetic engineering check only; no claim of photographic realism or real-domain generalization",
+    "combos": 50,
+    "samples": 100,
+    "opencv_version": "5.0.0",
+    "secondary_decoder": "ZXing-C++",
+    "totals": {
+      "shape_and_mask_valid": 100,
+      "opencv_original_decoded": 99,
+      "opencv_original_correct_payload": 99,
+      "zxing_original_decoded": 100,
+      "zxing_original_correct_payload": 100,
+      "opencv_clean_decoded": 92,
+      "opencv_clean_correct_payload": 92,
+      "zxing_clean_decoded": 100,
+      "zxing_clean_correct_payload": 100,
+      "opencv_damaged_decoded": 59,
+      "opencv_damaged_correct_payload": 59,
+      "zxing_damaged_decoded": 86,
+      "zxing_damaged_correct_payload": 86
+    }
+  },
+  "sourced_material_mild": {
+    "scope": "synthetic engineering check only; no claim of photographic realism or real-domain generalization",
+    "combos": 5,
+    "samples": 5,
+    "opencv_version": "5.0.0",
+    "secondary_decoder": "ZXing-C++",
+    "totals": {
+      "shape_and_mask_valid": 5,
+      "opencv_original_decoded": 5,
+      "opencv_original_correct_payload": 5,
+      "zxing_original_decoded": 5,
+      "zxing_original_correct_payload": 5,
+      "opencv_clean_decoded": 5,
+      "opencv_clean_correct_payload": 5,
+      "zxing_clean_decoded": 5,
+      "zxing_clean_correct_payload": 5,
+      "opencv_damaged_decoded": 5,
+      "opencv_damaged_correct_payload": 5,
+      "zxing_damaged_decoded": 5,
+      "zxing_damaged_correct_payload": 5
+    }
+  },
+  "sourced_material_challenging": {
+    "scope": "synthetic engineering check only; no claim of photographic realism or real-domain generalization",
+    "combos": 5,
+    "samples": 5,
+    "opencv_version": "5.0.0",
+    "secondary_decoder": "ZXing-C++",
+    "totals": {
+      "shape_and_mask_valid": 5,
+      "opencv_original_decoded": 5,
+      "opencv_original_correct_payload": 5,
+      "zxing_original_decoded": 5,
+      "zxing_original_correct_payload": 5,
+      "opencv_clean_decoded": 4,
+      "opencv_clean_correct_payload": 4,
+      "zxing_clean_decoded": 4,
+      "zxing_clean_correct_payload": 4,
+      "opencv_damaged_decoded": 4,
+      "opencv_damaged_correct_payload": 4,
+      "zxing_damaged_decoded": 4,
+      "zxing_damaged_correct_payload": 4
+    }
+  },
+  "fixed_acquisition": {
+    "scope": "synthetic engineering check only; no claim of photographic realism or real-domain generalization",
+    "combos": 1,
+    "samples": 1,
+    "opencv_version": "5.0.0",
+    "secondary_decoder": "ZXing-C++",
+    "totals": {
+      "shape_and_mask_valid": 1,
+      "opencv_original_decoded": 1,
+      "opencv_original_correct_payload": 1,
+      "zxing_original_decoded": 1,
+      "zxing_original_correct_payload": 1,
+      "opencv_clean_decoded": 0,
+      "opencv_clean_correct_payload": 0,
+      "zxing_clean_decoded": 0,
+      "zxing_clean_correct_payload": 0,
+      "opencv_damaged_decoded": 0,
+      "opencv_damaged_correct_payload": 0,
+      "zxing_damaged_decoded": 0,
+      "zxing_damaged_correct_payload": 0
+    }
+  },
+  "external_qr_localization": {
+    "source_repository": "https://gitcode.com/open-source-toolkit/24565/blob/main/README.md",
+    "description": "1085-image YOLOv5 QR recognition dataset; not a physical-damage ground-truth dataset",
+    "decode_interpretation": "Non-empty decoder returns only; payload truth and photo authenticity are not established",
+    "counts": {
+      "images": 1085,
+      "voc_files": 1037,
+      "yolo_files": 933,
+      "split_train_images": 746,
+      "opencv_full_returned_images": 325,
+      "zxing_full_returned_images": 635,
+      "full_decoders_agree_images": 309,
+      "opencv_crop_returned_boxes": 442,
+      "zxing_crop_returned_boxes": 727,
+      "crop_decoders_agree_boxes": 419,
+      "split_val_images": 187,
+      "split_test_images": 104,
+      "multi_box_images": 194,
+      "unlabeled_images": 48,
+      "split_unassigned_images": 48
+    },
+    "annotated_boxes": 1510,
+    "box_area_fraction_quantiles": {
+      "min": 0.003250485436893204,
+      "p10": 0.0074912617889695355,
+      "p25": 0.017453645833333333,
+      "median": 0.042080935146654765,
+      "p75": 0.11449799541165373,
+      "p90": 0.3039571836088531,
+      "max": 0.998001
+    }
+  }
+}

@@ -1,0 +1,54 @@
+# 精确混合污损示例：数组顺序就是叠加顺序。
+# enabled=false / instances=0 / params.count=0 都可表示“没有这种污损”。
+mode: damage_plan
+damage_plan:
+  - name: dust
+    enabled: true
+    probability: 1.0
+    instances: 1
+    severity: mild
+    params:
+      count: 120           # 灰尘颗粒数；0 = 无灰尘
+      radius_px: [1, 3]
+      opacity: 0.30
+      qr_bias: 0.45        # 0~1，越大越倾向落在 QR 区域
+
+  - name: scratch
+    enabled: true
+    probability: 1.0
+    instances: 1
+    severity: medium
+    params:
+      count: 6             # 划痕条数；0 = 无划痕
+      width_px: [1, 3]
+      length_ratio: [0.08, 0.30]
+      opacity: 0.62
+      qr_bias: 0.80
+
+  - name: metal_rust
+    enabled: true
+    probability: 0.70      # 每张图 70% 概率出现
+    instances: 1
+    severity: medium
+    params:
+      count: 2             # 锈蚀主斑块数
+      speckle_count: 45    # 周边细锈点数
+      radius_ratio: [0.015, 0.055]
+      opacity: 0.55
+
+  - name: laser_mark_contrast_loss
+    enabled: true
+    probability: 0.65
+    instances: 1
+    severity: medium
+    params:
+      count: 5             # QR 内对比度损失块数
+      patch_ratio: [0.02, 0.06]
+      blur_sigma: 6.0
+      opacity: 0.55
+
+  - name: tape
+    enabled: false         # 完全关闭
+    instances: 1
+    params:
+      count: 1

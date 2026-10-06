@@ -1,0 +1,15 @@
+damages:
+  - {name: dust, weight: 1.2}
+  - {name: mud, weight: 0.55}
+  - {name: oil_stain, weight: 0.65}
+  - {name: water_stain, weight: 0.75}
+  - {name: fingerprint, weight: 0.55}
+  - {name: scratch, weight: 1.0}
+  - {name: abrasion, weight: 1.0}
+  - {name: local_fading, weight: 0.8}
+  - {name: tape, weight: 0.45}
+  - {name: sticker, weight: 0.35}
+  - {name: handwriting, weight: 0.35}
+  - {name: stamp, weight: 0.20}
+  - {name: glue_stain, weight: 0.40}
+  - {name: droplets, weight: 0.35}

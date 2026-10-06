@@ -1,0 +1,66 @@
+# 50 个 “载体 × 成码方式” 组合，顺序与之前给你的表格一致
+combinations:
+  - {id: 1,  carrier: paper,          carrier_cn: 普通纸张,    method: laser_print,       method_cn: 激光打印}
+  - {id: 2,  carrier: paper,          carrier_cn: 普通纸张,    method: inkjet_print,      method_cn: 喷墨打印}
+  - {id: 3,  carrier: paper,          carrier_cn: 普通纸张,    method: offset_print,      method_cn: 胶印}
+  - {id: 4,  carrier: paper,          carrier_cn: 普通纸张,    method: thermal_print,     method_cn: 热敏打印}
+
+  - {id: 5,  carrier: adhesive_label, carrier_cn: 不干胶标签,  method: thermal_print,     method_cn: 热敏}
+  - {id: 6,  carrier: adhesive_label, carrier_cn: 不干胶标签,  method: thermal_transfer,  method_cn: 热转印}
+  - {id: 7,  carrier: adhesive_label, carrier_cn: 不干胶标签,  method: digital_inkjet,    method_cn: 数码喷墨}
+
+  - {id: 8,  carrier: cardboard,      carrier_cn: 瓦楞纸箱,    method: flexo_print,       method_cn: 柔版印刷}
+  - {id: 9,  carrier: cardboard,      carrier_cn: 瓦楞纸箱,    method: industrial_inkjet, method_cn: 喷码}
+  - {id: 10, carrier: cardboard,      carrier_cn: 瓦楞纸箱,    method: sticker,           method_cn: 贴标签}
+
+  - {id: 11, carrier: plastic_pack,   carrier_cn: 塑料包装,    method: gravure_print,     method_cn: 凹版印刷}
+  - {id: 12, carrier: plastic_pack,   carrier_cn: 塑料包装,    method: flexo_print,       method_cn: 柔版印刷}
+  - {id: 13, carrier: plastic_pack,   carrier_cn: 塑料包装,    method: uv_inkjet,         method_cn: UV喷墨}
+  - {id: 14, carrier: plastic_pack,   carrier_cn: 塑料包装,    method: thermal_transfer,  method_cn: 热转印}
+
+  - {id: 15, carrier: paper_box,      carrier_cn: 纸盒包装,    method: offset_print,      method_cn: 胶印}
+  - {id: 16, carrier: paper_box,      carrier_cn: 纸盒包装,    method: digital_print,     method_cn: 数码印刷}
+
+  - {id: 17, carrier: metal,          carrier_cn: 金属,        method: laser_mark,        method_cn: 激光打标}
+  - {id: 18, carrier: metal,          carrier_cn: 金属,        method: laser_engrave,     method_cn: 激光雕刻}
+  - {id: 19, carrier: metal,          carrier_cn: 金属,        method: screen_print,      method_cn: 丝网印刷}
+  - {id: 20, carrier: metal,          carrier_cn: 金属,        method: uv_print,          method_cn: UV打印}
+
+  - {id: 21, carrier: plastic_shell,  carrier_cn: 塑料外壳,    method: laser_mark,        method_cn: 激光打标}
+  - {id: 22, carrier: plastic_shell,  carrier_cn: 塑料外壳,    method: pad_print,         method_cn: 移印}
+  - {id: 23, carrier: plastic_shell,  carrier_cn: 塑料外壳,    method: screen_print,      method_cn: 丝印}
+  - {id: 24, carrier: plastic_shell,  carrier_cn: 塑料外壳,    method: sticker,           method_cn: 标签贴附}
+
+  - {id: 25, carrier: glass,          carrier_cn: 玻璃,        method: screen_print,      method_cn: 丝网印刷}
+  - {id: 26, carrier: glass,          carrier_cn: 玻璃,        method: uv_print,          method_cn: UV打印}
+  - {id: 27, carrier: glass,          carrier_cn: 玻璃,        method: laser_etch,        method_cn: 激光蚀刻}
+  - {id: 28, carrier: glass,          carrier_cn: 玻璃,        method: sticker,           method_cn: 贴膜/贴纸}
+
+  - {id: 29, carrier: wood,           carrier_cn: 木材,        method: laser_engrave,     method_cn: 激光雕刻}
+  - {id: 30, carrier: wood,           carrier_cn: 木材,        method: laser_burn,        method_cn: 激光烧灼}
+  - {id: 31, carrier: wood,           carrier_cn: 木材,        method: uv_print,          method_cn: UV打印}
+  - {id: 32, carrier: wood,           carrier_cn: 木材,        method: screen_print,      method_cn: 丝网印刷}
+
+  - {id: 33, carrier: textile,        carrier_cn: 纺织物,      method: screen_print,      method_cn: 丝网印刷}
+  - {id: 34, carrier: textile,        carrier_cn: 纺织物,      method: heat_transfer,     method_cn: 热转印}
+  - {id: 35, carrier: textile,        carrier_cn: 纺织物,      method: direct_inkjet,     method_cn: 数码直喷}
+  - {id: 36, carrier: textile,        carrier_cn: 纺织物,      method: jacquard,          method_cn: 织造/提花}
+  - {id: 37, carrier: textile,        carrier_cn: 纺织物,      method: embroidery,        method_cn: 刺绣}
+
+  - {id: 38, carrier: ceramic,        carrier_cn: 陶瓷,        method: screen_print,      method_cn: 丝印}
+  - {id: 39, carrier: ceramic,        carrier_cn: 陶瓷,        method: heat_transfer,     method_cn: 热转印}
+  - {id: 40, carrier: ceramic,        carrier_cn: 陶瓷,        method: underglaze,        method_cn: 釉下彩/烧制}
+
+  - {id: 41, carrier: acrylic_pvc,    carrier_cn: 亚克力/PVC,  method: uv_print,          method_cn: UV打印}
+  - {id: 42, carrier: acrylic_pvc,    carrier_cn: 亚克力/PVC,  method: screen_print,      method_cn: 丝印}
+  - {id: 43, carrier: acrylic_pvc,    carrier_cn: 亚克力/PVC,  method: laser_engrave,     method_cn: 激光雕刻}
+
+  - {id: 44, carrier: poster,         carrier_cn: 广告牌/海报, method: spray_print,       method_cn: 喷绘}
+  - {id: 45, carrier: poster,         carrier_cn: 广告牌/海报, method: photo_print,       method_cn: 写真}
+  - {id: 46, carrier: poster,         carrier_cn: 广告牌/海报, method: uv_roll_print,     method_cn: UV卷材打印}
+
+  - {id: 47, carrier: ticket_card,    carrier_cn: 票卡,        method: thermal_print,     method_cn: 热敏}
+  - {id: 48, carrier: ticket_card,    carrier_cn: 票卡,        method: thermal_transfer,  method_cn: 热转印}
+  - {id: 49, carrier: ticket_card,    carrier_cn: 票卡,        method: digital_print,     method_cn: 数码印刷}
+
+  - {id: 50, carrier: screen,         carrier_cn: 电子屏幕,    method: lcd_oled,          method_cn: LCD/OLED显示}

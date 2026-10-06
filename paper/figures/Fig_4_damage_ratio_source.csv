@@ -1,0 +1,4 @@
+﻿internal_parameter_preset,internal_scale,scratch_count,scratch_width_px_min,scratch_width_px_max,mask_area_fraction,qr_black_module_overlap_fraction
+mild,0.65,3,1.0,2.0,0.00630950927734375,0.016053091789605848
+medium,1.0,5,1.0,3.0,0.01476287841796875,0.03941527285771938
+severe,1.55,7,1.0,4.0,0.0196533203125,0.04981839379400027

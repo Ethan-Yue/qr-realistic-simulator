@@ -1,0 +1,310 @@
+{
+  "combo_id": 33,
+  "carrier": "textile",
+  "carrier_cn": "纺织物",
+  "method": "screen_print",
+  "method_cn": "丝网印刷",
+  "sample_index": 0,
+  "seed": 2621456139,
+  "stage_seeds": {
+    "clean": 2621456139,
+    "damage": 3760109250,
+    "capture": 3491718745,
+    "qr": 1747974551,
+    "layout": null
+  },
+  "seed_scheme": "SeedSequence(base_seed, combo_id, sample_index, stage)",
+  "qr_structure": {
+    "version": 4,
+    "error_correction": "M",
+    "border_modules": 4,
+    "payload_length": 69,
+    "module_count_with_border": 41,
+    "source_module_pitch_px": 11,
+    "source_side_px": 451
+  },
+  "payload_mode": "variable",
+  "payload_alphabet": "alphanumeric",
+  "qr_source": "QRDATASET://3SE.8YPR88CRH6CW7UL3ZM2T4/VR8HMW/1A6QKCB9KQQT7HGS2NHG6HZV",
+  "qr_payload": "QRDATASET://3SE.8YPR88CRH6CW7UL3ZM2T4/VR8HMW/1A6QKCB9KQQT7HGS2NHG6HZV",
+  "qr_input_info": null,
+  "quad_xy": [
+    [
+      83.48999786376953,
+      69.43000030517578
+    ],
+    [
+      454.8699951171875,
+      59.689998626708984
+    ],
+    [
+      442.7900085449219,
+      442.2099914550781
+    ],
+    [
+      72.13999938964844,
+      433.5899963378906
+    ]
+  ],
+  "layout_profile": "closeup",
+  "layout_reference": null,
+  "mask_definition": "qr_masks: QR成码模块的几何范围；damage_masks: 污损算子的几何范围（拍摄几何变换后、光学扩散前）；visible_change_masks: 配对拍摄图像任一通道差值>5的像素范围（含模糊/JPEG扩散）。255=范围内，0=范围外",
+  "visible_change_threshold_u8": 5,
+  "visible_change_area_ratio": 0.006778717041015625,
+  "image_size": [
+    512,
+    512
+  ],
+  "clean_baseline": false,
+  "paired_clean_reference": true,
+  "white_module_mode": "transparent",
+  "contrast_control": {
+    "qr_color_bgr": [
+      8,
+      8,
+      8
+    ],
+    "background_median_bgr": [
+      157.0,
+      171.0,
+      194.0
+    ],
+    "contrast_ratio": 9.161,
+    "min_contrast": 3.0,
+    "contrast_passes": true,
+    "rendered_contrast_ratio": 8.9915,
+    "rendered_contrast_passes": true,
+    "used_light_plate": false,
+    "background_resample_attempts": 1,
+    "white_module_mode_requested": "transparent",
+    "white_modules_transparent": true,
+    "white_underlay_type": "none",
+    "white_module_mode_reason": "forced_transparent",
+    "render_profile": "material",
+    "surface_coupling": {
+      "surface_family": "screen_ink",
+      "surface_applied": true,
+      "substrate_color_fraction": 0.02,
+      "texture_gain": 3.5203,
+      "grain_gain": 0.9778,
+      "edge_sigma_px": 0.46,
+      "edge_min_coverage": 0.91
+    },
+    "background_source": {
+      "source_kind": "background_library_image",
+      "source_path": "textile/polyhaven_cotton_jersey_diff_1k.jpg",
+      "source_sha256": "0f1b790e4087223275aaa6fdffdd46a556a26d2af72cd811acf72ba9c21ec1f6",
+      "source_size_hw": [
+        1025,
+        1024
+      ],
+      "crop_xywh": [
+        0,
+        0,
+        1024,
+        1024
+      ],
+      "output_size_hw": [
+        512,
+        512
+      ]
+    }
+  },
+  "render_profile": "material",
+  "capture": {
+    "mode": "challenging",
+    "carrier": "textile",
+    "image_size_hw": [
+      512,
+      512
+    ],
+    "perspective_matrix": [
+      [
+        0.9403623938560486,
+        -0.030465753749012947,
+        11.624147415161133
+      ],
+      [
+        -0.03390336409211159,
+        0.9801579713821411,
+        -3.1157257556915283
+      ],
+      [
+        -0.0001291084918193519,
+        1.0474507234903285e-06,
+        1.0
+      ]
+    ],
+    "source_corners_xy": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        511.0,
+        0.0
+      ],
+      [
+        511.0,
+        511.0
+      ],
+      [
+        0.0,
+        511.0
+      ]
+    ],
+    "destination_corners_xy": [
+      [
+        11.624147415161133,
+        -3.1157257556915283
+      ],
+      [
+        526.9120483398438,
+        -21.884138107299805
+      ],
+      [
+        509.9521789550781,
+        514.06005859375
+      ],
+      [
+        -3.9417428970336914,
+        497.4787292480469
+      ]
+    ],
+    "quad_xy": [
+      [
+        83.49116516113281,
+        69.4254379272461
+      ],
+      [
+        454.866455078125,
+        59.68758010864258
+      ],
+      [
+        442.7899475097656,
+        442.2114562988281
+      ],
+      [
+        72.13854217529297,
+        433.59478759765625
+      ]
+    ],
+    "lighting": {
+      "ambient": 0.9225643061394349,
+      "gradient_xy": [
+        0.08366411443898208,
+        -0.0506838101978683
+      ],
+      "vignette": 0.06940500762674683,
+      "white_balance_bgr": [
+        1.013016700744629,
+        1.0,
+        0.9871505498886108
+      ],
+      "highlight": {
+        "enabled": false,
+        "strength": 0.0
+      }
+    },
+    "exposure_ev": 0.4296651814163921,
+    "strong_glare": {
+      "enabled": false,
+      "strength_linear": 0.0
+    },
+    "motion_blur": {
+      "enabled": true,
+      "length_px": 9,
+      "angle_degrees": -23.859334251525965
+    },
+    "near_white_fraction_clean": 0.0,
+    "blur_sigma_px": 1.2261561203757327,
+    "gaussian_noise_sigma_srgb": 1.3491928723249678,
+    "shared_noise_realization": true,
+    "jpeg_quality": null,
+    "mask_scope": "geometric footprint before optical spread"
+  },
+  "damage_enabled": true,
+  "damage_mode_requested": "random",
+  "damage_spatial_mode": "full_canvas",
+  "damage_severity_requested": "medium",
+  "target_qr_damage_ratio": null,
+  "damage_candidate_attempts": 1,
+  "damage_candidate_seed": 3760109250,
+  "qr_damage_ratio_after_capture": 0.014359516739210024,
+  "damage_area_ratio_after_capture": 0.0044403076171875,
+  "damage_random_counts": {
+    "common": [
+      1,
+      2
+    ],
+    "carrier": [
+      0,
+      1
+    ],
+    "method": [
+      0,
+      1
+    ]
+  },
+  "damage_config_path": null,
+  "damage": {
+    "carrier": "纺织物",
+    "method": "丝网印刷",
+    "spatial_mode": "full_canvas",
+    "damage_roi_xyxy": null,
+    "damage_roi_feather_px": 0,
+    "applied_plan_area_reference": "full_canvas",
+    "severity_default": "medium",
+    "mode": "random",
+    "damage_types": [
+      "mud"
+    ],
+    "damage_categories": [
+      "common"
+    ],
+    "damage_layer_count": 1,
+    "damage_area_ratio": 0.00437164306640625,
+    "qr_damage_ratio": 0.014372305192776354,
+    "applied_plan": [
+      {
+        "name": "mud",
+        "category": "common",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.00437164306640625,
+        "params": {
+          "count": 2,
+          "radius_ratio": [
+            0.015,
+            0.06
+          ],
+          "opacity": 0.6465781163585375
+        }
+      }
+    ],
+    "layers": [
+      {
+        "name": "mud",
+        "category": "common",
+        "area_ratio": 0.00437164306640625,
+        "qr_overlap_ratio": 0.014372305192776354,
+        "params": {
+          "count": 2,
+          "radius_ratio": [
+            0.015,
+            0.06
+          ],
+          "opacity": 0.6465781163585375
+        }
+      }
+    ]
+  },
+  "outputs": {
+    "clean_image": "clean_images/000000.png",
+    "damaged_image": "damaged_images/000000.png",
+    "qr_mask": "qr_masks/000000.png",
+    "damage_mask": "damage_masks/000000.png",
+    "visible_change_mask": "visible_change_masks/000000.png",
+    "qr_original": "qr_original/000000.png"
+  }
+}

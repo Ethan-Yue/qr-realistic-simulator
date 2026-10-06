@@ -1,0 +1,1415 @@
+notes:
+  enabled: false = 该污损不存在
+  probability: 0~1，本张图出现概率
+  instances: 整种污损重复叠加的层数；0 = 不出现
+  severity: mild / medium / severe；仍可被 params 精确覆盖
+  params.count: 一层内部元素数（划痕条数、斑点数、裂纹数、块数等）；0 = 不产生实际污损
+  ratio_fields: 相对于整图或 QR 尺寸的比例；px 字段为像素值
+common:
+  dust:
+    base_operator: dust
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 120
+      radius_px:
+      - 1
+      - 3
+      opacity: 0.3
+      qr_bias: 0.4
+      gray: 130
+      feather: 0.5
+  mud:
+    base_operator: mud
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.015
+      - 0.06
+      opacity: 0.6
+      qr_bias: 0.7
+      smooth: 9
+      color_bgr:
+      - 40
+      - 65
+      - 85
+  oil_stain:
+    base_operator: oil_stain
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.03
+      - 0.11
+      opacity: 0.25
+      qr_bias: 0.65
+      smooth: 15
+      color_bgr:
+      - 25
+      - 45
+      - 55
+  water_stain:
+    base_operator: water_stain
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.025
+      - 0.09
+      ring_width_px: 5
+      fill_opacity: 0.1
+      ring_opacity: 0.18
+      qr_bias: 0.7
+  fingerprint:
+    base_operator: fingerprint
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      ridge_count: 14
+      radius_ratio:
+      - 0.05
+      - 0.1
+      line_width_px: 2
+      opacity: 0.14
+      qr_bias: 0.72
+  scratch:
+    base_operator: scratch
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 5
+      width_px:
+      - 1
+      - 3
+      length_ratio:
+      - 0.07
+      - 0.32
+      opacity: 0.6
+      qr_bias: 0.8
+      light: true
+  abrasion:
+    base_operator: abrasion
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.018
+      - 0.07
+      micro_scratch_count: 12
+      target_gray: 185
+      opacity: 0.35
+      qr_bias: 0.78
+  local_fading:
+    base_operator: local_fading
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.04
+      - 0.13
+      target_gray: 220
+      opacity: 0.35
+      qr_bias: 0.82
+      smooth: 21
+  tape:
+    base_operator: tape
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      size_ratio:
+      - 0.1
+      - 0.25
+      opacity: 0.25
+      qr_bias: 0.78
+      angle: true
+      edge_opacity: 0.22
+  sticker:
+    base_operator: sticker
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      size_ratio:
+      - 0.07
+      - 0.18
+      opacity: 0.95
+      qr_bias: 0.84
+      angle: true
+      color_bgr:
+      - 235
+      - 235
+      - 235
+  handwriting:
+    base_operator: handwriting
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 3
+      points_per_stroke:
+      - 3
+      - 7
+      width_px:
+      - 1
+      - 4
+      vertical_jitter_px: 12
+      opacity: 0.9
+      qr_bias: 0.8
+      color_bgr:
+      - 10
+      - 20
+      - 25
+  stamp:
+    base_operator: stamp
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.035
+      - 0.075
+      line_width_px: 2
+      opacity: 0.6
+      qr_bias: 0.8
+      color_bgr:
+      - 30
+      - 35
+      - 180
+  glue_stain:
+    base_operator: glue_stain
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.018
+      - 0.07
+      opacity: 0.15
+      qr_bias: 0.65
+      smooth: 17
+      color_bgr:
+      - 140
+      - 175
+      - 195
+  droplets:
+    base_operator: droplets
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 12
+      radius_px:
+      - 3
+      - 14
+      opacity: 0.07
+      qr_bias: 0.5
+carrier:
+  paper_tear:
+    base_operator: tear_or_hole
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.015
+      - 0.055
+      opacity: 0.98
+      qr_bias: 0.82
+      smooth: 3
+      color_bgr:
+      - 225
+      - 225
+      - 225
+  paper_yellow_spot:
+    base_operator: local_fading
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.04
+      - 0.13
+      target_gray: 220
+      opacity: 0.35
+      qr_bias: 0.82
+      smooth: 21
+  paper_fiber_loss:
+    base_operator: abrasion
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.018
+      - 0.07
+      micro_scratch_count: 12
+      target_gray: 185
+      opacity: 0.35
+      qr_bias: 0.78
+  label_edge_peel:
+    base_operator: peel_patch
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.012
+      - 0.05
+      opacity: 0.88
+      qr_bias: 0.9
+      smooth: 5
+      color_bgr:
+      - 225
+      - 225
+      - 225
+  label_missing_piece:
+    base_operator: tear_or_hole
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.015
+      - 0.055
+      opacity: 0.98
+      qr_bias: 0.82
+      smooth: 3
+      color_bgr:
+      - 225
+      - 225
+      - 225
+  label_adhesive_residue:
+    base_operator: glue_stain
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.018
+      - 0.07
+      opacity: 0.15
+      qr_bias: 0.65
+      smooth: 17
+      color_bgr:
+      - 140
+      - 175
+      - 195
+  corrugated_fiber_scuff:
+    base_operator: abrasion
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.018
+      - 0.07
+      micro_scratch_count: 12
+      target_gray: 185
+      opacity: 0.35
+      qr_bias: 0.78
+  corrugated_puncture:
+    base_operator: tear_or_hole
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.015
+      - 0.055
+      opacity: 0.98
+      qr_bias: 0.82
+      smooth: 3
+      color_bgr:
+      - 225
+      - 225
+      - 225
+  corrugated_soil_embed:
+    base_operator: mud
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.015
+      - 0.06
+      opacity: 0.6
+      qr_bias: 0.7
+      smooth: 9
+      color_bgr:
+      - 40
+      - 65
+      - 85
+  film_surface_scuff:
+    base_operator: scratch
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 5
+      width_px:
+      - 1
+      - 3
+      length_ratio:
+      - 0.07
+      - 0.32
+      opacity: 0.6
+      qr_bias: 0.8
+      light: true
+  film_ink_peel:
+    base_operator: peel_patch
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.012
+      - 0.05
+      opacity: 0.88
+      qr_bias: 0.9
+      smooth: 5
+      color_bgr:
+      - 225
+      - 225
+      - 225
+  film_condensation:
+    base_operator: droplets
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 12
+      radius_px:
+      - 3
+      - 14
+      opacity: 0.07
+      qr_bias: 0.5
+  carton_edge_scuff:
+    base_operator: abrasion
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.018
+      - 0.07
+      micro_scratch_count: 12
+      target_gray: 185
+      opacity: 0.35
+      qr_bias: 0.78
+  carton_coating_chip:
+    base_operator: peel_patch
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.012
+      - 0.05
+      opacity: 0.88
+      qr_bias: 0.9
+      smooth: 5
+      color_bgr:
+      - 225
+      - 225
+      - 225
+  metal_rust:
+    base_operator: rust
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.016
+      - 0.065
+      speckle_count: 60
+      speckle_radius_px:
+      - 1
+      - 5
+      opacity: 0.55
+      qr_bias: 0.7
+      color_bgr:
+      - 25
+      - 70
+      - 135
+  metal_oxidation:
+    base_operator: oxidation
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.025
+      - 0.09
+      opacity: 0.28
+      qr_bias: 0.65
+      smooth: 19
+      color_bgr:
+      - 160
+      - 165
+      - 165
+  metal_pitting:
+    base_operator: pitting
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 45
+      radius_px:
+      - 1
+      - 5
+      opacity: 0.6
+      qr_bias: 0.8
+      color_bgr:
+      - 45
+      - 50
+      - 55
+  plastic_scuff:
+    base_operator: scratch
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 5
+      width_px:
+      - 1
+      - 3
+      length_ratio:
+      - 0.07
+      - 0.32
+      opacity: 0.6
+      qr_bias: 0.8
+      light: true
+  plastic_grease:
+    base_operator: fingerprint
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      ridge_count: 14
+      radius_ratio:
+      - 0.05
+      - 0.1
+      line_width_px: 2
+      opacity: 0.14
+      qr_bias: 0.72
+  plastic_coating_chip:
+    base_operator: peel_patch
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.012
+      - 0.05
+      opacity: 0.88
+      qr_bias: 0.9
+      smooth: 5
+      color_bgr:
+      - 225
+      - 225
+      - 225
+  glass_scuff:
+    base_operator: coating_haze
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.04
+      - 0.14
+      opacity: 0.18
+      qr_bias: 0.7
+      smooth: 25
+      color_bgr:
+      - 225
+      - 225
+      - 225
+  glass_droplets:
+    base_operator: droplets
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 12
+      radius_px:
+      - 3
+      - 14
+      opacity: 0.07
+      qr_bias: 0.5
+  glass_glue_residue:
+    base_operator: glue_stain
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.018
+      - 0.07
+      opacity: 0.15
+      qr_bias: 0.65
+      smooth: 17
+      color_bgr:
+      - 140
+      - 175
+      - 195
+  wood_surface_wear:
+    base_operator: abrasion
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.018
+      - 0.07
+      micro_scratch_count: 12
+      target_gray: 185
+      opacity: 0.35
+      qr_bias: 0.78
+  wood_char_loss:
+    base_operator: local_fading
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.04
+      - 0.13
+      target_gray: 220
+      opacity: 0.35
+      qr_bias: 0.82
+      smooth: 21
+  wood_stain:
+    base_operator: mud
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.015
+      - 0.06
+      opacity: 0.6
+      qr_bias: 0.7
+      smooth: 9
+      color_bgr:
+      - 40
+      - 65
+      - 85
+  fabric_fray:
+    base_operator: fiber_fray
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 25
+      width_px:
+      - 1
+      - 2
+      length_ratio:
+      - 0.01
+      - 0.08
+      opacity: 0.5
+      qr_bias: 0.82
+  fabric_thread_loss:
+    base_operator: fiber_fray
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 25
+      width_px:
+      - 1
+      - 2
+      length_ratio:
+      - 0.01
+      - 0.08
+      opacity: 0.5
+      qr_bias: 0.82
+  fabric_hole:
+    base_operator: tear_or_hole
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.015
+      - 0.055
+      opacity: 0.98
+      qr_bias: 0.82
+      smooth: 3
+      color_bgr:
+      - 225
+      - 225
+      - 225
+  ceramic_glaze_chip:
+    base_operator: peel_patch
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.012
+      - 0.05
+      opacity: 0.88
+      qr_bias: 0.9
+      smooth: 5
+      color_bgr:
+      - 225
+      - 225
+      - 225
+  ceramic_crack:
+    base_operator: crack
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      segments:
+      - 4
+      - 8
+      dx_px:
+      - -25
+      - 25
+      dy_px:
+      - 10
+      - 35
+      width_px: 2
+      opacity: 0.78
+      qr_bias: 0.75
+  ceramic_stain:
+    base_operator: mud
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.015
+      - 0.06
+      opacity: 0.6
+      qr_bias: 0.7
+      smooth: 9
+      color_bgr:
+      - 40
+      - 65
+      - 85
+  acrylic_haze:
+    base_operator: coating_haze
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.04
+      - 0.14
+      opacity: 0.18
+      qr_bias: 0.7
+      smooth: 25
+      color_bgr:
+      - 225
+      - 225
+      - 225
+  acrylic_scratch:
+    base_operator: scratch
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 5
+      width_px:
+      - 1
+      - 3
+      length_ratio:
+      - 0.07
+      - 0.32
+      opacity: 0.6
+      qr_bias: 0.8
+      light: true
+  acrylic_glue:
+    base_operator: glue_stain
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.018
+      - 0.07
+      opacity: 0.15
+      qr_bias: 0.65
+      smooth: 17
+      color_bgr:
+      - 140
+      - 175
+      - 195
+  poster_tear:
+    base_operator: tear_or_hole
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.015
+      - 0.055
+      opacity: 0.98
+      qr_bias: 0.82
+      smooth: 3
+      color_bgr:
+      - 225
+      - 225
+      - 225
+  poster_uv_fade:
+    base_operator: local_fading
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.04
+      - 0.13
+      target_gray: 220
+      opacity: 0.35
+      qr_bias: 0.82
+      smooth: 21
+  poster_graffiti:
+    base_operator: handwriting
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 3
+      points_per_stroke:
+      - 3
+      - 7
+      width_px:
+      - 1
+      - 4
+      vertical_jitter_px: 12
+      opacity: 0.9
+      qr_bias: 0.8
+      color_bgr:
+      - 10
+      - 20
+      - 25
+  ticket_crease_wear:
+    base_operator: abrasion
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.018
+      - 0.07
+      micro_scratch_count: 12
+      target_gray: 185
+      opacity: 0.35
+      qr_bias: 0.78
+  ticket_fade:
+    base_operator: local_fading
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.04
+      - 0.13
+      target_gray: 220
+      opacity: 0.35
+      qr_bias: 0.82
+      smooth: 21
+  ticket_edge_wear:
+    base_operator: abrasion
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.018
+      - 0.07
+      micro_scratch_count: 12
+      target_gray: 185
+      opacity: 0.35
+      qr_bias: 0.78
+  screen_dead_pixels:
+    base_operator: dead_pixels
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 40
+      size_px:
+      - 1
+      - 4
+      opacity: 0.98
+      color_bgr:
+      - 0
+      - 0
+      - 0
+  screen_line_dropout:
+    base_operator: screen_line_dropout
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      line: true
+      thickness_px:
+      - 1
+      - 4
+      opacity: 0.98
+      color_bgr:
+      - 0
+      - 0
+      - 0
+  screen_smudges:
+    base_operator: fingerprint
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      ridge_count: 14
+      radius_ratio:
+      - 0.05
+      - 0.1
+      line_width_px: 2
+      opacity: 0.14
+      qr_bias: 0.72
+method:
+  toner_wear:
+    base_operator: toner_wear
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 8
+      patch_ratio:
+      - 0.01
+      - 0.045
+      target_gray: 220
+      opacity: 0.6
+      feather: 0.45
+  inkjet_water_bleed:
+    base_operator: inkjet_water_bleed
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 7
+      patch_ratio:
+      - 0.012
+      - 0.055
+      blur_sigma: 1.8
+      kernel_size: 5
+      opacity: 0.6
+      feather: 2.0
+  offset_ink_scuff:
+    base_operator: abrasion
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.018
+      - 0.07
+      micro_scratch_count: 12
+      target_gray: 185
+      opacity: 0.35
+      qr_bias: 0.78
+  thermal_band_fade:
+    base_operator: thermal_band_fade
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      band_height_ratio:
+      - 0.03
+      - 0.12
+      target_gray: 210
+      opacity: 0.6
+      feather: 1.2
+  thermal_transfer_flake:
+    base_operator: uv_ink_chip
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 7
+      patch_ratio:
+      - 0.008
+      - 0.035
+      open_kernel_px: 3
+      target_gray: 225
+      opacity: 0.75
+      feather: 0.25
+  digital_inkjet_fade:
+    base_operator: local_fading
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.04
+      - 0.13
+      target_gray: 220
+      opacity: 0.35
+      qr_bias: 0.82
+      smooth: 21
+  flexo_ink_dropout:
+    base_operator: dot_dropout
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 80
+      radius_px:
+      - 1
+      - 3
+      target_gray: 225
+      opacity: 0.75
+      feather: 0.35
+  spray_dot_dropout:
+    base_operator: dot_dropout
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 80
+      radius_px:
+      - 1
+      - 3
+      target_gray: 225
+      opacity: 0.75
+      feather: 0.35
+  gravure_surface_wear:
+    base_operator: abrasion
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.018
+      - 0.07
+      micro_scratch_count: 12
+      target_gray: 185
+      opacity: 0.35
+      qr_bias: 0.78
+  uv_ink_chip:
+    base_operator: uv_ink_chip
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 7
+      patch_ratio:
+      - 0.008
+      - 0.035
+      open_kernel_px: 3
+      target_gray: 225
+      opacity: 0.75
+      feather: 0.25
+  laser_mark_contrast_loss:
+    base_operator: laser_contrast_loss
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 5
+      patch_ratio:
+      - 0.02
+      - 0.07
+      blur_sigma: 8.0
+      opacity: 0.6
+      feather: 1.0
+  laser_engrave_groove_fill:
+    base_operator: groove_fill
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 8
+      patch_ratio:
+      - 0.01
+      - 0.05
+      opacity: 0.65
+      feather: 0.6
+      color_bgr:
+      - 75
+      - 85
+      - 90
+  screen_ink_crack:
+    base_operator: ink_crack
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 9
+      width_px:
+      - 1
+      - 2
+      length_ratio:
+      - 0.02
+      - 0.12
+      target_gray: 225
+      opacity: 0.68
+      qr_bias: 0.95
+  pad_print_wear:
+    base_operator: toner_wear
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 8
+      patch_ratio:
+      - 0.01
+      - 0.045
+      target_gray: 220
+      opacity: 0.6
+      feather: 0.45
+  laser_etch_surface_fill:
+    base_operator: groove_fill
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 8
+      patch_ratio:
+      - 0.01
+      - 0.05
+      opacity: 0.65
+      feather: 0.6
+      color_bgr:
+      - 75
+      - 85
+      - 90
+  laser_burn_char_wear:
+    base_operator: local_fading
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.04
+      - 0.13
+      target_gray: 220
+      opacity: 0.35
+      qr_bias: 0.82
+      smooth: 21
+  digital_print_fade:
+    base_operator: local_fading
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 1
+      radius_ratio:
+      - 0.04
+      - 0.13
+      target_gray: 220
+      opacity: 0.35
+      qr_bias: 0.82
+      smooth: 21
+  jacquard_thread_dropout:
+    base_operator: thread_dropout
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 10
+      width_px:
+      - 1
+      - 3
+      length_ratio:
+      - 0.03
+      - 0.16
+      target_gray: 205
+      opacity: 0.72
+      qr_bias: 0.95
+  embroidery_stitch_break:
+    base_operator: thread_dropout
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 10
+      width_px:
+      - 1
+      - 3
+      length_ratio:
+      - 0.03
+      - 0.16
+      target_gray: 205
+      opacity: 0.72
+      qr_bias: 0.95
+  underglaze_chip:
+    base_operator: uv_ink_chip
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 7
+      patch_ratio:
+      - 0.008
+      - 0.035
+      open_kernel_px: 3
+      target_gray: 225
+      opacity: 0.75
+      feather: 0.25
+  photo_surface_scratch:
+    base_operator: abrasion
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 2
+      radius_ratio:
+      - 0.018
+      - 0.07
+      micro_scratch_count: 12
+      target_gray: 185
+      opacity: 0.35
+      qr_bias: 0.78
+  uv_roll_ink_chip:
+    base_operator: uv_ink_chip
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 7
+      patch_ratio:
+      - 0.008
+      - 0.035
+      open_kernel_px: 3
+      target_gray: 225
+      opacity: 0.75
+      feather: 0.25
+  display_pixel_dropout:
+    base_operator: dead_pixels
+    controls:
+      enabled: true
+      probability: 1.0
+      instances: 1
+      severity: medium
+    params:
+      count: 40
+      size_px:
+      - 1
+      - 4
+      opacity: 0.98
+      color_bgr:
+      - 0
+      - 0
+      - 0

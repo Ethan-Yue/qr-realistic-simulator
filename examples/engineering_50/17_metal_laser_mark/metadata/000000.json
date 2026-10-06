@@ -1,0 +1,367 @@
+{
+  "combo_id": 17,
+  "carrier": "metal",
+  "carrier_cn": "金属",
+  "method": "laser_mark",
+  "method_cn": "激光打标",
+  "sample_index": 0,
+  "seed": 336260494,
+  "stage_seeds": {
+    "clean": 336260494,
+    "damage": 482295102,
+    "capture": 600008864,
+    "qr": 221960468
+  },
+  "seed_scheme": "SeedSequence(base_seed, combo_id, sample_index, stage)",
+  "qr_structure": {
+    "version": 3,
+    "error_correction": "L",
+    "border_modules": 4,
+    "payload_length": 72,
+    "module_count_with_border": 37,
+    "source_module_pitch_px": 12,
+    "source_side_px": 444
+  },
+  "payload_mode": "variable",
+  "payload_alphabet": "alphanumeric",
+  "qr_source": "QRDATASET://DTCL87GRTDW8QEC.AW9484XP:CPI8X:USV4EXF//3DT420PON3J3RFVOZB6J",
+  "qr_payload": "QRDATASET://DTCL87GRTDW8QEC.AW9484XP:CPI8X:USV4EXF//3DT420PON3J3RFVOZB6J",
+  "qr_input_info": null,
+  "quad_xy": [
+    [
+      61.720001220703125,
+      70.91999816894531
+    ],
+    [
+      429.2300109863281,
+      67.80999755859375
+    ],
+    [
+      434.1600036621094,
+      441.3399963378906
+    ],
+    [
+      66.19999694824219,
+      440.75
+    ]
+  ],
+  "mask_definition": "qr_masks: QR成码模块的几何范围；damage_masks: 污损算子的几何范围（拍摄几何变换后、光学扩散前）；visible_change_masks: 配对拍摄图像任一通道差值>5的像素范围（含模糊/JPEG扩散）。255=范围内，0=范围外",
+  "visible_change_threshold_u8": 5,
+  "visible_change_area_ratio": 0.0179901123046875,
+  "image_size": [
+    512,
+    512
+  ],
+  "clean_baseline": false,
+  "paired_clean_reference": true,
+  "white_module_mode": "random",
+  "contrast_control": {
+    "qr_color_bgr": [
+      62,
+      62,
+      66
+    ],
+    "background_median_bgr": [
+      199.0,
+      204.0,
+      207.0
+    ],
+    "contrast_ratio": 6.5896,
+    "min_contrast": 3.0,
+    "contrast_passes": true,
+    "rendered_contrast_ratio": 5.634,
+    "rendered_contrast_passes": true,
+    "used_light_plate": false,
+    "background_resample_attempts": 1,
+    "white_module_mode_requested": "random",
+    "white_modules_transparent": true,
+    "white_underlay_type": "none",
+    "white_module_mode_reason": "default_transparent",
+    "render_profile": "material",
+    "surface_coupling": {
+      "surface_family": "laser_surface",
+      "surface_applied": true,
+      "substrate_color_fraction": 0.075,
+      "texture_gain": 3.5621,
+      "grain_gain": 0.7124,
+      "edge_sigma_px": 0.47,
+      "edge_min_coverage": 0.91
+    },
+    "background_source": {
+      "source_kind": "background_library_image",
+      "source_path": "metal/084.jpg",
+      "source_sha256": "36bbb1b6f22fd12577195b1342844a6dd243499f3e8ae697d36ae1776e20fdbf",
+      "source_size_hw": [
+        768,
+        768
+      ],
+      "crop_xywh": [
+        0,
+        0,
+        768,
+        768
+      ],
+      "output_size_hw": [
+        512,
+        512
+      ]
+    }
+  },
+  "render_profile": "material",
+  "capture": {
+    "mode": "mild",
+    "carrier": "metal",
+    "image_size_hw": [
+      512,
+      512
+    ],
+    "perspective_matrix": [
+      [
+        0.9824555516242981,
+        0.011921183206140995,
+        -5.071552276611328
+      ],
+      [
+        -0.010219755582511425,
+        0.9989289045333862,
+        0.5398034453392029
+      ],
+      [
+        -2.677077463886235e-05,
+        -2.9509974410757422e-06,
+        1.0
+      ]
+    ],
+    "source_corners_xy": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        511.0,
+        0.0
+      ],
+      [
+        511.0,
+        511.0
+      ],
+      [
+        0.0,
+        511.0
+      ]
+    ],
+    "destination_corners_xy": [
+      [
+        -5.071552276611328,
+        0.5398034453392029
+      ],
+      [
+        503.8559265136719,
+        -4.747436046600342
+      ],
+      [
+        510.8131103515625,
+        513.5701904296875
+      ],
+      [
+        1.0217132568359375,
+        511.7641906738281
+      ]
+    ],
+    "quad_xy": [
+      [
+        61.72301483154297,
+        70.92109680175781
+      ],
+      [
+        429.225341796875,
+        67.81367492675781
+      ],
+      [
+        434.1556091308594,
+        441.3370666503906
+      ],
+      [
+        66.20299530029297,
+        440.7466125488281
+      ]
+    ],
+    "lighting": {
+      "ambient": 1.0223500720942689,
+      "gradient_xy": [
+        -0.04296101399506042,
+        -0.050474123001091324
+      ],
+      "vignette": 0.04761750472024956,
+      "white_balance_bgr": [
+        1.009807825088501,
+        1.0,
+        0.9902874231338501
+      ],
+      "highlight": {
+        "enabled": true,
+        "strength": 0.14449052068332804,
+        "center_xy_fraction": [
+          0.3836185499811311,
+          0.3297677356475182
+        ],
+        "radii_fraction": [
+          0.2678326732309062,
+          0.3754998113492233
+        ],
+        "angle_degrees": 57.39419549012848
+      }
+    },
+    "blur_sigma_px": 0.5529777779505836,
+    "gaussian_noise_sigma_srgb": 0.9943880872863435,
+    "shared_noise_realization": true,
+    "jpeg_quality": null,
+    "mask_scope": "geometric footprint before optical spread"
+  },
+  "damage_enabled": true,
+  "damage_mode_requested": "random",
+  "damage_severity_requested": "medium",
+  "damage_random_counts": {
+    "common": [
+      1,
+      2
+    ],
+    "carrier": [
+      0,
+      1
+    ],
+    "method": [
+      0,
+      1
+    ]
+  },
+  "damage_config_path": null,
+  "damage": {
+    "carrier": "金属",
+    "method": "激光打标",
+    "severity_default": "medium",
+    "mode": "random",
+    "damage_types": [
+      "sticker",
+      "metal_rust",
+      "laser_mark_contrast_loss"
+    ],
+    "damage_categories": [
+      "common",
+      "carrier",
+      "method"
+    ],
+    "damage_layer_count": 3,
+    "damage_area_ratio": 0.015537261962890625,
+    "qr_damage_ratio": 0.05817567567567568,
+    "applied_plan": [
+      {
+        "name": "sticker",
+        "category": "common",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.0047454833984375,
+        "params": {
+          "count": 1,
+          "size_ratio": [
+            0.07,
+            0.18
+          ],
+          "opacity": 0.9079734947157583,
+          "edge_opacity": 0.22
+        }
+      },
+      {
+        "name": "metal_rust",
+        "category": "carrier",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.008899688720703125,
+        "params": {
+          "count": 2,
+          "speckle_count": 60,
+          "radius_ratio": [
+            0.016,
+            0.065
+          ],
+          "opacity": 0.39108064880334126,
+          "corrosion": true
+        }
+      },
+      {
+        "name": "laser_mark_contrast_loss",
+        "category": "method",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.00218963623046875,
+        "params": {
+          "count": 5,
+          "patch_ratio": [
+            0.02,
+            0.07
+          ],
+          "blur_sigma": 8.0,
+          "opacity": 0.7486462076416366,
+          "contrast_loss": true
+        }
+      }
+    ],
+    "layers": [
+      {
+        "name": "sticker",
+        "category": "common",
+        "area_ratio": 0.0047454833984375,
+        "qr_overlap_ratio": 0.016936936936936937,
+        "params": {
+          "count": 1,
+          "size_ratio": [
+            0.07,
+            0.18
+          ],
+          "opacity": 0.9079734947157583,
+          "edge_opacity": 0.22
+        }
+      },
+      {
+        "name": "metal_rust",
+        "category": "carrier",
+        "area_ratio": 0.008899688720703125,
+        "qr_overlap_ratio": 0.03006756756756757,
+        "params": {
+          "count": 2,
+          "speckle_count": 60,
+          "radius_ratio": [
+            0.016,
+            0.065
+          ],
+          "opacity": 0.39108064880334126,
+          "corrosion": true
+        }
+      },
+      {
+        "name": "laser_mark_contrast_loss",
+        "category": "method",
+        "area_ratio": 0.00218963623046875,
+        "qr_overlap_ratio": 0.012927927927927928,
+        "params": {
+          "count": 5,
+          "patch_ratio": [
+            0.02,
+            0.07
+          ],
+          "blur_sigma": 8.0,
+          "opacity": 0.7486462076416366,
+          "contrast_loss": true
+        }
+      }
+    ]
+  },
+  "outputs": {
+    "clean_image": "clean_images/000000.png",
+    "damaged_image": "damaged_images/000000.png",
+    "qr_mask": "qr_masks/000000.png",
+    "damage_mask": "damage_masks/000000.png",
+    "visible_change_mask": "visible_change_masks/000000.png",
+    "qr_original": "qr_original/000000.png"
+  }
+}

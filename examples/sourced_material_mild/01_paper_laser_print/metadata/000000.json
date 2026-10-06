@@ -1,0 +1,347 @@
+{
+  "combo_id": 1,
+  "carrier": "paper",
+  "carrier_cn": "普通纸张",
+  "method": "laser_print",
+  "method_cn": "激光打印",
+  "sample_index": 0,
+  "seed": 2331230659,
+  "stage_seeds": {
+    "clean": 2331230659,
+    "damage": 3210800065,
+    "capture": 559651039,
+    "qr": 1771077599,
+    "layout": null
+  },
+  "seed_scheme": "SeedSequence(base_seed, combo_id, sample_index, stage)",
+  "qr_structure": {
+    "version": 4,
+    "error_correction": "M",
+    "border_modules": 4,
+    "payload_length": 63,
+    "module_count_with_border": 41,
+    "source_module_pitch_px": 11,
+    "source_side_px": 451
+  },
+  "payload_mode": "variable",
+  "payload_alphabet": "alphanumeric",
+  "qr_source": "QRDATASET://6J30W2NBXE1MI5P43PNEJM-6OF8.FK9XNC3PR.JRN7HYT5KG37G",
+  "qr_payload": "QRDATASET://6J30W2NBXE1MI5P43PNEJM-6OF8.FK9XNC3PR.JRN7HYT5KG37G",
+  "qr_input_info": null,
+  "quad_xy": [
+    [
+      71.87000274658203,
+      70.80999755859375
+    ],
+    [
+      440.3399963378906,
+      65.62000274658203
+    ],
+    [
+      435.9800109863281,
+      435.2099914550781
+    ],
+    [
+      66.94999694824219,
+      439.9100036621094
+    ]
+  ],
+  "layout_profile": "closeup",
+  "layout_reference": null,
+  "mask_definition": "qr_masks: QR成码模块的几何范围；damage_masks: 污损算子的几何范围（拍摄几何变换后、光学扩散前）；visible_change_masks: 配对拍摄图像任一通道差值>5的像素范围（含模糊/JPEG扩散）。255=范围内，0=范围外",
+  "visible_change_threshold_u8": 5,
+  "visible_change_area_ratio": 0.0199127197265625,
+  "image_size": [
+    512,
+    512
+  ],
+  "clean_baseline": false,
+  "paired_clean_reference": true,
+  "white_module_mode": "transparent",
+  "contrast_control": {
+    "qr_color_bgr": [
+      8,
+      8,
+      8
+    ],
+    "background_median_bgr": [
+      107.0,
+      123.0,
+      176.0
+    ],
+    "contrast_ratio": 5.6186,
+    "min_contrast": 3.0,
+    "contrast_passes": true,
+    "rendered_contrast_ratio": 5.5795,
+    "rendered_contrast_passes": true,
+    "used_light_plate": false,
+    "background_resample_attempts": 1,
+    "white_module_mode_requested": "transparent",
+    "white_modules_transparent": true,
+    "white_underlay_type": "none",
+    "white_module_mode_reason": "forced_transparent",
+    "render_profile": "material",
+    "surface_coupling": {
+      "surface_family": "toner",
+      "surface_applied": true,
+      "substrate_color_fraction": 0.012,
+      "texture_gain": 2.6279,
+      "grain_gain": 0.876,
+      "edge_sigma_px": 0.36,
+      "edge_min_coverage": 0.94
+    },
+    "background_source": {
+      "source_kind": "background_library_image",
+      "source_path": "paper/wikimedia_old_paper_texture.jpg",
+      "source_sha256": "c7e43f042fb79b7437ecc5970933d7c62921ac9b1951321c3a6bacf4e459b99b",
+      "source_size_hw": [
+        4441,
+        6927
+      ],
+      "crop_xywh": [
+        614,
+        0,
+        4441,
+        4441
+      ],
+      "output_size_hw": [
+        512,
+        512
+      ]
+    }
+  },
+  "render_profile": "material",
+  "capture": {
+    "mode": "mild",
+    "carrier": "paper",
+    "image_size_hw": [
+      512,
+      512
+    ],
+    "perspective_matrix": [
+      [
+        0.9991515278816223,
+        -0.013640085235238075,
+        3.7770605087280273
+      ],
+      [
+        -0.014343159273266792,
+        1.0006523132324219,
+        6.720119953155518
+      ],
+      [
+        -3.6621256640501088e-06,
+        -4.1434759623371065e-06,
+        1.0
+      ]
+    ],
+    "source_corners_xy": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        511.0,
+        0.0
+      ],
+      [
+        511.0,
+        511.0
+      ],
+      [
+        0.0,
+        511.0
+      ]
+    ],
+    "destination_corners_xy": [
+      [
+        3.7770605087280273,
+        6.720119953155518
+      ],
+      [
+        515.3078002929688,
+        -0.6103765964508057
+      ],
+      [
+        509.4052429199219,
+        512.7693481445312
+      ],
+      [
+        -3.199798107147217,
+        519.1526489257812
+      ]
+    ],
+    "quad_xy": [
+      [
+        71.86943054199219,
+        70.80980682373047
+      ],
+      [
+        440.34295654296875,
+        65.61724090576172
+      ],
+      [
+        435.98004150390625,
+        435.2119140625
+      ],
+      [
+        66.94939422607422,
+        439.9132995605469
+      ]
+    ],
+    "lighting": {
+      "ambient": 0.9895070041428945,
+      "gradient_xy": [
+        -0.035174983524794236,
+        -0.04089861033963027
+      ],
+      "vignette": 0.034890631716410714,
+      "white_balance_bgr": [
+        0.9828664660453796,
+        1.0,
+        1.0174322128295898
+      ],
+      "highlight": {
+        "enabled": false,
+        "strength": 0.0
+      }
+    },
+    "exposure_ev": 0.0,
+    "strong_glare": {
+      "enabled": false,
+      "strength_linear": 0.0
+    },
+    "motion_blur": {
+      "enabled": false,
+      "length_px": 0,
+      "angle_degrees": null
+    },
+    "near_white_fraction_clean": 0.0,
+    "blur_sigma_px": 0.43743616922693407,
+    "gaussian_noise_sigma_srgb": 1.163873682192253,
+    "shared_noise_realization": true,
+    "jpeg_quality": 96,
+    "mask_scope": "geometric footprint before optical spread"
+  },
+  "damage_enabled": true,
+  "damage_mode_requested": "random",
+  "damage_spatial_mode": "full_canvas",
+  "damage_severity_requested": "medium",
+  "target_qr_damage_ratio": null,
+  "damage_candidate_attempts": 1,
+  "damage_candidate_seed": 3210800065,
+  "qr_damage_ratio_after_capture": 0.03734511367309557,
+  "damage_area_ratio_after_capture": 0.015590667724609375,
+  "damage_random_counts": {
+    "common": [
+      1,
+      2
+    ],
+    "carrier": [
+      0,
+      1
+    ],
+    "method": [
+      0,
+      1
+    ]
+  },
+  "damage_config_path": null,
+  "damage": {
+    "carrier": "普通纸张",
+    "method": "激光打印",
+    "spatial_mode": "full_canvas",
+    "damage_roi_xyxy": null,
+    "damage_roi_feather_px": 0,
+    "applied_plan_area_reference": "full_canvas",
+    "severity_default": "medium",
+    "mode": "random",
+    "damage_types": [
+      "dust",
+      "paper_fiber_loss"
+    ],
+    "damage_categories": [
+      "common",
+      "carrier"
+    ],
+    "damage_layer_count": 2,
+    "damage_area_ratio": 0.015605926513671875,
+    "qr_damage_ratio": 0.037344308458789124,
+    "applied_plan": [
+      {
+        "name": "dust",
+        "category": "common",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.00429534912109375,
+        "params": {
+          "count": 37,
+          "radius_px": [
+            1.0,
+            4.0
+          ],
+          "opacity": 0.48257118292216516,
+          "qr_bias": 0.4
+        }
+      },
+      {
+        "name": "paper_fiber_loss",
+        "category": "carrier",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.011310577392578125,
+        "params": {
+          "count": 2,
+          "micro_scratch_count": 12,
+          "radius_ratio": [
+            0.018,
+            0.07
+          ],
+          "target_gray": 185,
+          "opacity": 0.33752438017092234
+        }
+      }
+    ],
+    "layers": [
+      {
+        "name": "dust",
+        "category": "common",
+        "area_ratio": 0.00429534912109375,
+        "qr_overlap_ratio": 0.011740496046788692,
+        "params": {
+          "count": 37,
+          "radius_px": [
+            1.0,
+            4.0
+          ],
+          "opacity": 0.48257118292216516,
+          "qr_bias": 0.4
+        }
+      },
+      {
+        "name": "paper_fiber_loss",
+        "category": "carrier",
+        "area_ratio": 0.011310577392578125,
+        "qr_overlap_ratio": 0.025603812412000434,
+        "params": {
+          "count": 2,
+          "micro_scratch_count": 12,
+          "radius_ratio": [
+            0.018,
+            0.07
+          ],
+          "target_gray": 185,
+          "opacity": 0.33752438017092234
+        }
+      }
+    ]
+  },
+  "outputs": {
+    "clean_image": "clean_images/000000.png",
+    "damaged_image": "damaged_images/000000.png",
+    "qr_mask": "qr_masks/000000.png",
+    "damage_mask": "damage_masks/000000.png",
+    "visible_change_mask": "visible_change_masks/000000.png",
+    "qr_original": "qr_original/000000.png"
+  }
+}

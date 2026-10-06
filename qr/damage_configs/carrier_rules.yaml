@@ -1,0 +1,74 @@
+普通纸张:
+  damages:
+    - {name: paper_tear, weight: 0.8}
+    - {name: paper_yellow_spot, weight: 0.8}
+    - {name: paper_fiber_loss, weight: 1.0}
+不干胶标签:
+  damages:
+    - {name: label_edge_peel, weight: 1.1}
+    - {name: label_missing_piece, weight: 0.7}
+    - {name: label_adhesive_residue, weight: 0.7}
+瓦楞纸箱:
+  damages:
+    - {name: corrugated_fiber_scuff, weight: 1.1}
+    - {name: corrugated_puncture, weight: 0.55}
+    - {name: corrugated_soil_embed, weight: 0.8}
+塑料包装:
+  damages:
+    - {name: film_surface_scuff, weight: 1.0}
+    - {name: film_ink_peel, weight: 0.75}
+    - {name: film_condensation, weight: 0.55}
+纸盒包装:
+  damages:
+    - {name: carton_edge_scuff, weight: 1.1}
+    - {name: carton_coating_chip, weight: 0.8}
+金属:
+  damages:
+    - {name: metal_rust, weight: 0.75}
+    - {name: metal_oxidation, weight: 1.0}
+    - {name: metal_pitting, weight: 0.55}
+塑料外壳:
+  damages:
+    - {name: plastic_scuff, weight: 1.2}
+    - {name: plastic_grease, weight: 0.8}
+    - {name: plastic_coating_chip, weight: 0.65}
+玻璃:
+  damages:
+    - {name: glass_scuff, weight: 0.8}
+    - {name: glass_droplets, weight: 1.0}
+    - {name: glass_glue_residue, weight: 0.55}
+木材:
+  damages:
+    - {name: wood_surface_wear, weight: 1.0}
+    - {name: wood_char_loss, weight: 0.65}
+    - {name: wood_stain, weight: 0.7}
+纺织物:
+  damages:
+    - {name: fabric_fray, weight: 1.0}
+    - {name: fabric_thread_loss, weight: 1.0}
+    - {name: fabric_hole, weight: 0.45}
+陶瓷:
+  damages:
+    - {name: ceramic_glaze_chip, weight: 0.75}
+    - {name: ceramic_crack, weight: 0.65}
+    - {name: ceramic_stain, weight: 0.6}
+亚克力/PVC:
+  damages:
+    - {name: acrylic_haze, weight: 0.8}
+    - {name: acrylic_scratch, weight: 1.2}
+    - {name: acrylic_glue, weight: 0.55}
+广告牌/海报:
+  damages:
+    - {name: poster_tear, weight: 0.8}
+    - {name: poster_uv_fade, weight: 1.0}
+    - {name: poster_graffiti, weight: 0.45}
+票卡:
+  damages:
+    - {name: ticket_crease_wear, weight: 1.0}
+    - {name: ticket_fade, weight: 0.8}
+    - {name: ticket_edge_wear, weight: 0.8}
+电子屏幕:
+  damages:
+    - {name: screen_dead_pixels, weight: 0.8}
+    - {name: screen_line_dropout, weight: 0.45}
+    - {name: screen_smudges, weight: 1.0}

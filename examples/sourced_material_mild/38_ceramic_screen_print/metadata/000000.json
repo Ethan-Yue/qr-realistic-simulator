@@ -1,0 +1,319 @@
+{
+  "combo_id": 38,
+  "carrier": "ceramic",
+  "carrier_cn": "陶瓷",
+  "method": "screen_print",
+  "method_cn": "丝印",
+  "sample_index": 0,
+  "seed": 39231577,
+  "stage_seeds": {
+    "clean": 39231577,
+    "damage": 3535282335,
+    "capture": 38810965,
+    "qr": 2717078414,
+    "layout": null
+  },
+  "seed_scheme": "SeedSequence(base_seed, combo_id, sample_index, stage)",
+  "qr_structure": {
+    "version": 5,
+    "error_correction": "M",
+    "border_modules": 4,
+    "payload_length": 94,
+    "module_count_with_border": 45,
+    "source_module_pitch_px": 10,
+    "source_side_px": 450
+  },
+  "payload_mode": "variable",
+  "payload_alphabet": "alphanumeric",
+  "qr_source": "QRDATASET://SLV-HRWVCTYDCOHSXQS4C3-CKVVNRHK4Y4Q2M/79-O56N4A97XM0.V1Y947BV/N:45R1ZCZ7UETXQ4BY8M",
+  "qr_payload": "QRDATASET://SLV-HRWVCTYDCOHSXQS4C3-CKVVNRHK4Y4Q2M/79-O56N4A97XM0.V1Y947BV/N:45R1ZCZ7UETXQ4BY8M",
+  "qr_input_info": null,
+  "quad_xy": [
+    [
+      73.9000015258789,
+      88.68000030517578
+    ],
+    [
+      435.2799987792969,
+      81.94000244140625
+    ],
+    [
+      434.29998779296875,
+      442.3800048828125
+    ],
+    [
+      75.19999694824219,
+      446.510009765625
+    ]
+  ],
+  "layout_profile": "closeup",
+  "layout_reference": null,
+  "mask_definition": "qr_masks: QR成码模块的几何范围；damage_masks: 污损算子的几何范围（拍摄几何变换后、光学扩散前）；visible_change_masks: 配对拍摄图像任一通道差值>5的像素范围（含模糊/JPEG扩散）。255=范围内，0=范围外",
+  "visible_change_threshold_u8": 5,
+  "visible_change_area_ratio": 0.018848419189453125,
+  "image_size": [
+    512,
+    512
+  ],
+  "clean_baseline": false,
+  "paired_clean_reference": true,
+  "white_module_mode": "transparent",
+  "contrast_control": {
+    "qr_color_bgr": [
+      8,
+      8,
+      8
+    ],
+    "background_median_bgr": [
+      84.0,
+      107.0,
+      134.0
+    ],
+    "contrast_ratio": 4.0482,
+    "min_contrast": 3.0,
+    "contrast_passes": true,
+    "rendered_contrast_ratio": 4.0035,
+    "rendered_contrast_passes": true,
+    "used_light_plate": false,
+    "background_resample_attempts": 1,
+    "white_module_mode_requested": "transparent",
+    "white_modules_transparent": true,
+    "white_underlay_type": "none",
+    "white_module_mode_reason": "forced_transparent",
+    "render_profile": "material",
+    "surface_coupling": {
+      "surface_family": "screen_ink",
+      "surface_applied": true,
+      "substrate_color_fraction": 0.02,
+      "texture_gain": 2.2821,
+      "grain_gain": 0.9509,
+      "edge_sigma_px": 0.46,
+      "edge_min_coverage": 0.91
+    },
+    "background_source": {
+      "source_kind": "background_library_image",
+      "source_path": "ceramic/polyhaven_anti_skid_tiles_diff_1k.jpg",
+      "source_sha256": "c46ec19caf6c82d70b96603de7ff5ad7c244cf6df3bc178f320ed493e61ee752",
+      "source_size_hw": [
+        1024,
+        1024
+      ],
+      "crop_xywh": [
+        0,
+        0,
+        1024,
+        1024
+      ],
+      "output_size_hw": [
+        512,
+        512
+      ]
+    }
+  },
+  "render_profile": "material",
+  "capture": {
+    "mode": "mild",
+    "carrier": "ceramic",
+    "image_size_hw": [
+      512,
+      512
+    ],
+    "perspective_matrix": [
+      [
+        0.9980147480964661,
+        0.0049354517832398415,
+        4.637539386749268
+      ],
+      [
+        -0.020417289808392525,
+        1.0046898126602173,
+        6.707129001617432
+      ],
+      [
+        -1.995226375584025e-05,
+        1.760572376952041e-05,
+        1.0
+      ]
+    ],
+    "source_corners_xy": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        511.0,
+        0.0
+      ],
+      [
+        511.0,
+        511.0
+      ],
+      [
+        0.0,
+        511.0
+      ]
+    ],
+    "destination_corners_xy": [
+      [
+        4.637539386749268,
+        6.707129001617432
+      ],
+      [
+        519.9240112304688,
+        -3.7644872665405273
+      ],
+      [
+        517.7659301757812,
+        510.28228759765625
+      ],
+      [
+        7.0957183837890625,
+        515.4662475585938
+      ]
+    ],
+    "quad_xy": [
+      [
+        73.90394592285156,
+        88.68009185791016
+      ],
+      [
+        435.2785339355469,
+        81.93775939941406
+      ],
+      [
+        434.2984619140625,
+        442.3766784667969
+      ],
+      [
+        75.20036315917969,
+        446.5113220214844
+      ]
+    ],
+    "lighting": {
+      "ambient": 1.0542680176210202,
+      "gradient_xy": [
+        -0.06668949646000166,
+        -0.052348330641170546
+      ],
+      "vignette": 0.0340238413199554,
+      "white_balance_bgr": [
+        0.9868341088294983,
+        1.0,
+        1.0133415460586548
+      ],
+      "highlight": {
+        "enabled": true,
+        "strength": 0.038336678609665595,
+        "center_xy_fraction": [
+          0.5010700198918918,
+          0.6069997634903662
+        ],
+        "radii_fraction": [
+          0.30896827842395136,
+          0.49871709861075986
+        ],
+        "angle_degrees": -57.32250350326624
+      }
+    },
+    "exposure_ev": 0.0,
+    "strong_glare": {
+      "enabled": false,
+      "strength_linear": 0.0
+    },
+    "motion_blur": {
+      "enabled": false,
+      "length_px": 0,
+      "angle_degrees": null
+    },
+    "near_white_fraction_clean": 0.0,
+    "blur_sigma_px": 0.32902824083852,
+    "gaussian_noise_sigma_srgb": 1.1424122033884085,
+    "shared_noise_realization": true,
+    "jpeg_quality": 95,
+    "mask_scope": "geometric footprint before optical spread"
+  },
+  "damage_enabled": true,
+  "damage_mode_requested": "random",
+  "damage_spatial_mode": "full_canvas",
+  "damage_severity_requested": "medium",
+  "target_qr_damage_ratio": null,
+  "damage_candidate_attempts": 1,
+  "damage_candidate_seed": 3535282335,
+  "qr_damage_ratio_after_capture": 0.05684067021416949,
+  "damage_area_ratio_after_capture": 0.023712158203125,
+  "damage_random_counts": {
+    "common": [
+      1,
+      2
+    ],
+    "carrier": [
+      0,
+      1
+    ],
+    "method": [
+      0,
+      1
+    ]
+  },
+  "damage_config_path": null,
+  "damage": {
+    "carrier": "陶瓷",
+    "method": "丝印",
+    "spatial_mode": "full_canvas",
+    "damage_roi_xyxy": null,
+    "damage_roi_feather_px": 0,
+    "applied_plan_area_reference": "full_canvas",
+    "severity_default": "medium",
+    "mode": "random",
+    "damage_types": [
+      "oil_stain"
+    ],
+    "damage_categories": [
+      "common"
+    ],
+    "damage_layer_count": 1,
+    "damage_area_ratio": 0.02352142333984375,
+    "qr_damage_ratio": 0.057115112994350285,
+    "applied_plan": [
+      {
+        "name": "oil_stain",
+        "category": "common",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.02352142333984375,
+        "params": {
+          "count": 2,
+          "radius_ratio": [
+            0.03,
+            0.11
+          ],
+          "opacity": 0.29501450371066595
+        }
+      }
+    ],
+    "layers": [
+      {
+        "name": "oil_stain",
+        "category": "common",
+        "area_ratio": 0.02352142333984375,
+        "qr_overlap_ratio": 0.057115112994350285,
+        "params": {
+          "count": 2,
+          "radius_ratio": [
+            0.03,
+            0.11
+          ],
+          "opacity": 0.29501450371066595
+        }
+      }
+    ]
+  },
+  "outputs": {
+    "clean_image": "clean_images/000000.png",
+    "damaged_image": "damaged_images/000000.png",
+    "qr_mask": "qr_masks/000000.png",
+    "damage_mask": "damage_masks/000000.png",
+    "visible_change_mask": "visible_change_masks/000000.png",
+    "qr_original": "qr_original/000000.png"
+  }
+}

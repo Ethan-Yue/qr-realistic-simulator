@@ -1,0 +1,364 @@
+{
+  "combo_id": 36,
+  "carrier": "textile",
+  "carrier_cn": "纺织物",
+  "method": "jacquard",
+  "method_cn": "织造/提花",
+  "sample_index": 0,
+  "seed": 1861884544,
+  "stage_seeds": {
+    "clean": 1861884544,
+    "damage": 2834235282,
+    "capture": 3682244312,
+    "qr": 40180795
+  },
+  "seed_scheme": "SeedSequence(base_seed, combo_id, sample_index, stage)",
+  "qr_structure": {
+    "version": 3,
+    "error_correction": "Q",
+    "border_modules": 4,
+    "payload_length": 46,
+    "module_count_with_border": 37,
+    "source_module_pitch_px": 12,
+    "source_side_px": 444
+  },
+  "payload_mode": "variable",
+  "payload_alphabet": "alphanumeric",
+  "qr_source": "QRDATASET:///6489W1XPTTV-X.4B07UJ9VTI5N7VLBF1:",
+  "qr_payload": "QRDATASET:///6489W1XPTTV-X.4B07UJ9VTI5N7VLBF1:",
+  "qr_input_info": null,
+  "quad_xy": [
+    [
+      62.900001525878906,
+      71.27999877929688
+    ],
+    [
+      437.489990234375,
+      74.44999694824219
+    ],
+    [
+      438.57000732421875,
+      436.4700012207031
+    ],
+    [
+      70.70999908447266,
+      437.510009765625
+    ]
+  ],
+  "mask_definition": "qr_masks: QR成码模块的几何范围；damage_masks: 污损算子的几何范围（拍摄几何变换后、光学扩散前）；visible_change_masks: 配对拍摄图像任一通道差值>5的像素范围（含模糊/JPEG扩散）。255=范围内，0=范围外",
+  "visible_change_threshold_u8": 5,
+  "visible_change_area_ratio": 0.032894134521484375,
+  "image_size": [
+    512,
+    512
+  ],
+  "clean_baseline": false,
+  "paired_clean_reference": true,
+  "white_module_mode": "random",
+  "contrast_control": {
+    "qr_color_bgr": [
+      8,
+      8,
+      8
+    ],
+    "background_median_bgr": [
+      82.0,
+      91.0,
+      111.0
+    ],
+    "contrast_ratio": 3.1416,
+    "min_contrast": 3.0,
+    "contrast_passes": true,
+    "rendered_contrast_ratio": 2.9587,
+    "rendered_contrast_passes": false,
+    "used_light_plate": false,
+    "background_resample_attempts": 1,
+    "white_module_mode_requested": "random",
+    "white_modules_transparent": true,
+    "white_underlay_type": "none",
+    "white_module_mode_reason": "default_transparent",
+    "render_profile": "material",
+    "surface_coupling": {
+      "surface_family": "woven",
+      "surface_applied": true,
+      "substrate_color_fraction": 0.065,
+      "texture_gain": 7.9784,
+      "grain_gain": 1.3297,
+      "edge_sigma_px": 0.5,
+      "edge_min_coverage": 0.9
+    },
+    "background_source": {
+      "source_kind": "background_library_image",
+      "source_path": "textile/066.jpg",
+      "source_sha256": "dc7abdfe7d39ea03a3ca81068dfa1399c2a6461bac176bd6e48c789e4cff833f",
+      "source_size_hw": [
+        768,
+        768
+      ],
+      "crop_xywh": [
+        0,
+        0,
+        768,
+        768
+      ],
+      "output_size_hw": [
+        512,
+        512
+      ]
+    }
+  },
+  "render_profile": "material",
+  "capture": {
+    "mode": "mild",
+    "carrier": "textile",
+    "image_size_hw": [
+      512,
+      512
+    ],
+    "perspective_matrix": [
+      [
+        1.0346544981002808,
+        0.024803025647997856,
+        -4.687386512756348
+      ],
+      [
+        0.01102401316165924,
+        1.019721269607544,
+        0.6026725769042969
+      ],
+      [
+        3.186430694768205e-05,
+        4.979585355613381e-05,
+        1.0
+      ]
+    ],
+    "source_corners_xy": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        511.0,
+        0.0
+      ],
+      [
+        511.0,
+        511.0
+      ],
+      [
+        0.0,
+        511.0
+      ]
+    ],
+    "destination_corners_xy": [
+      [
+        -4.687386512756348,
+        0.6026725769042969
+      ],
+      [
+        515.6253051757812,
+        6.136032581329346
+      ],
+      [
+        515.1970825195312,
+        506.19097900390625
+      ],
+      [
+        7.788768768310547,
+        508.735107421875
+      ]
+    ],
+    "quad_xy": [
+      [
+        62.89753341674805,
+        71.2787094116211
+      ],
+      [
+        437.4900817871094,
+        74.45376586914062
+      ],
+      [
+        438.56536865234375,
+        436.47216796875
+      ],
+      [
+        70.70785522460938,
+        437.5115051269531
+      ]
+    ],
+    "lighting": {
+      "ambient": 0.986332390837514,
+      "gradient_xy": [
+        -0.03326003710024361,
+        0.015496846789976149
+      ],
+      "vignette": 0.039668926503856713,
+      "white_balance_bgr": [
+        1.0051007270812988,
+        1.0,
+        0.9949251413345337
+      ],
+      "highlight": {
+        "enabled": false,
+        "strength": 0.0
+      }
+    },
+    "blur_sigma_px": 0.3415599335583056,
+    "gaussian_noise_sigma_srgb": 1.2259297768586142,
+    "shared_noise_realization": true,
+    "jpeg_quality": 94,
+    "mask_scope": "geometric footprint before optical spread"
+  },
+  "damage_enabled": true,
+  "damage_mode_requested": "random",
+  "damage_severity_requested": "medium",
+  "damage_random_counts": {
+    "common": [
+      1,
+      2
+    ],
+    "carrier": [
+      0,
+      1
+    ],
+    "method": [
+      0,
+      1
+    ]
+  },
+  "damage_config_path": null,
+  "damage": {
+    "carrier": "纺织物",
+    "method": "织造/提花",
+    "severity_default": "medium",
+    "mode": "random",
+    "damage_types": [
+      "sticker",
+      "fingerprint",
+      "jacquard_thread_dropout"
+    ],
+    "damage_categories": [
+      "common",
+      "common",
+      "method"
+    ],
+    "damage_layer_count": 3,
+    "damage_area_ratio": 0.039966583251953125,
+    "qr_damage_ratio": 0.12426940639269407,
+    "applied_plan": [
+      {
+        "name": "sticker",
+        "category": "common",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.0193023681640625,
+        "params": {
+          "count": 1,
+          "size_ratio": [
+            0.07,
+            0.18
+          ],
+          "opacity": 0.9535103591683466,
+          "edge_opacity": 0.22
+        }
+      },
+      {
+        "name": "fingerprint",
+        "category": "common",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.016796112060546875,
+        "params": {
+          "count": 1,
+          "ridge_count": 14,
+          "radius_ratio": [
+            0.05,
+            0.1
+          ],
+          "opacity": 0.1973576812803739
+        }
+      },
+      {
+        "name": "jacquard_thread_dropout",
+        "category": "method",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.0041961669921875,
+        "params": {
+          "count": 10,
+          "width_px": [
+            1.0,
+            3.0
+          ],
+          "length_ratio": [
+            0.03,
+            0.16
+          ],
+          "target_gray": 205,
+          "opacity": 0.8068119199098784,
+          "thread_dropout": true
+        }
+      }
+    ],
+    "layers": [
+      {
+        "name": "sticker",
+        "category": "common",
+        "area_ratio": 0.0193023681640625,
+        "qr_overlap_ratio": 0.059337899543378994,
+        "params": {
+          "count": 1,
+          "size_ratio": [
+            0.07,
+            0.18
+          ],
+          "opacity": 0.9535103591683466,
+          "edge_opacity": 0.22
+        }
+      },
+      {
+        "name": "fingerprint",
+        "category": "common",
+        "area_ratio": 0.016796112060546875,
+        "qr_overlap_ratio": 0.04178082191780822,
+        "params": {
+          "count": 1,
+          "ridge_count": 14,
+          "radius_ratio": [
+            0.05,
+            0.1
+          ],
+          "opacity": 0.1973576812803739
+        }
+      },
+      {
+        "name": "jacquard_thread_dropout",
+        "category": "method",
+        "area_ratio": 0.0041961669921875,
+        "qr_overlap_ratio": 0.02511415525114155,
+        "params": {
+          "count": 10,
+          "width_px": [
+            1.0,
+            3.0
+          ],
+          "length_ratio": [
+            0.03,
+            0.16
+          ],
+          "target_gray": 205,
+          "opacity": 0.8068119199098784,
+          "thread_dropout": true
+        }
+      }
+    ]
+  },
+  "outputs": {
+    "clean_image": "clean_images/000000.png",
+    "damaged_image": "damaged_images/000000.png",
+    "qr_mask": "qr_masks/000000.png",
+    "damage_mask": "damage_masks/000000.png",
+    "visible_change_mask": "visible_change_masks/000000.png",
+    "qr_original": "qr_original/000000.png"
+  }
+}

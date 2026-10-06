@@ -1,0 +1,409 @@
+{
+  "combo_id": 29,
+  "carrier": "wood",
+  "carrier_cn": "木材",
+  "method": "laser_engrave",
+  "method_cn": "激光雕刻",
+  "sample_index": 0,
+  "seed": 4246484295,
+  "stage_seeds": {
+    "clean": 4246484295,
+    "damage": 4087681546,
+    "capture": 3706501882,
+    "qr": 3289360118,
+    "layout": null
+  },
+  "seed_scheme": "SeedSequence(base_seed, combo_id, sample_index, stage)",
+  "qr_structure": {
+    "version": 5,
+    "error_correction": "M",
+    "border_modules": 4,
+    "payload_length": 95,
+    "module_count_with_border": 45,
+    "source_module_pitch_px": 10,
+    "source_side_px": 450
+  },
+  "payload_mode": "variable",
+  "payload_alphabet": "alphanumeric",
+  "qr_source": "QRDATASET://8GL539LW6W3YIQZ81QFCRVL22LQ:GEWHPFZGI80T4FOES6P8Q.U0JVF49M2TZXNAQ:WK86:XQZP:F0-URRJ",
+  "qr_payload": "QRDATASET://8GL539LW6W3YIQZ81QFCRVL22LQ:GEWHPFZGI80T4FOES6P8Q.U0JVF49M2TZXNAQ:WK86:XQZP:F0-URRJ",
+  "qr_input_info": null,
+  "quad_xy": [
+    [
+      78.7300033569336,
+      85.8499984741211
+    ],
+    [
+      436.2799987792969,
+      80.54000091552734
+    ],
+    [
+      434.3999938964844,
+      441.2099914550781
+    ],
+    [
+      79.30000305175781,
+      441.82000732421875
+    ]
+  ],
+  "layout_profile": "closeup",
+  "layout_reference": null,
+  "mask_definition": "qr_masks: QR成码模块的几何范围；damage_masks: 污损算子的几何范围（拍摄几何变换后、光学扩散前）；visible_change_masks: 配对拍摄图像任一通道差值>5的像素范围（含模糊/JPEG扩散）。255=范围内，0=范围外",
+  "visible_change_threshold_u8": 5,
+  "visible_change_area_ratio": 0.0279388427734375,
+  "image_size": [
+    512,
+    512
+  ],
+  "clean_baseline": false,
+  "paired_clean_reference": true,
+  "white_module_mode": "transparent",
+  "contrast_control": {
+    "qr_color_bgr": [
+      8,
+      8,
+      8
+    ],
+    "background_median_bgr": [
+      125.0,
+      148.0,
+      172.0
+    ],
+    "contrast_ratio": 6.9488,
+    "min_contrast": 3.0,
+    "contrast_passes": true,
+    "rendered_contrast_ratio": 6.265,
+    "rendered_contrast_passes": true,
+    "used_light_plate": false,
+    "background_resample_attempts": 1,
+    "white_module_mode_requested": "transparent",
+    "white_modules_transparent": true,
+    "white_underlay_type": "none",
+    "white_module_mode_reason": "forced_transparent",
+    "render_profile": "material",
+    "surface_coupling": {
+      "surface_family": "laser_surface",
+      "surface_applied": true,
+      "substrate_color_fraction": 0.09,
+      "texture_gain": 7.5033,
+      "grain_gain": 1.0421,
+      "edge_sigma_px": 0.54,
+      "edge_min_coverage": 0.88
+    },
+    "background_source": {
+      "source_kind": "background_library_image",
+      "source_path": "wood/polyhaven_ash_veneer_diff_1k.jpg",
+      "source_sha256": "13fd87c8b0a5cc1d4e408fb75b3eb629417ea6b1aaf1672b5adf993640486673",
+      "source_size_hw": [
+        1024,
+        1024
+      ],
+      "crop_xywh": [
+        0,
+        0,
+        1024,
+        1024
+      ],
+      "output_size_hw": [
+        512,
+        512
+      ]
+    }
+  },
+  "render_profile": "material",
+  "capture": {
+    "mode": "mild",
+    "carrier": "wood",
+    "image_size_hw": [
+      512,
+      512
+    ],
+    "perspective_matrix": [
+      [
+        0.9787058234214783,
+        0.003088967874646187,
+        -3.854360580444336
+      ],
+      [
+        -0.01768418587744236,
+        0.9985038042068481,
+        4.33607292175293
+      ],
+      [
+        -3.620173447416164e-05,
+        1.8995842765434645e-05,
+        1.0
+      ]
+    ],
+    "source_corners_xy": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        511.0,
+        0.0
+      ],
+      [
+        511.0,
+        511.0
+      ],
+      [
+        0.0,
+        511.0
+      ]
+    ],
+    "destination_corners_xy": [
+      [
+        -3.854360580444336,
+        4.33607292175293
+      ],
+      [
+        505.6177673339844,
+        -4.7891411781311035
+      ],
+      [
+        502.25872802734375,
+        510.01910400390625
+      ],
+      [
+        -2.254018545150757,
+        509.6246643066406
+      ]
+    ],
+    "quad_xy": [
+      [
+        78.72859191894531,
+        85.85212707519531
+      ],
+      [
+        436.277587890625,
+        80.54249572753906
+      ],
+      [
+        434.39697265625,
+        441.2120666503906
+      ],
+      [
+        79.29759979248047,
+        441.8232116699219
+      ]
+    ],
+    "lighting": {
+      "ambient": 1.059961878766641,
+      "gradient_xy": [
+        0.02310686529211603,
+        -0.018526653261152458
+      ],
+      "vignette": 0.034931038410867206,
+      "white_balance_bgr": [
+        1.0046122074127197,
+        1.0,
+        0.9954089522361755
+      ],
+      "highlight": {
+        "enabled": false,
+        "strength": 0.0
+      }
+    },
+    "exposure_ev": 0.0,
+    "strong_glare": {
+      "enabled": false,
+      "strength_linear": 0.0
+    },
+    "motion_blur": {
+      "enabled": false,
+      "length_px": 0,
+      "angle_degrees": null
+    },
+    "near_white_fraction_clean": 0.0,
+    "blur_sigma_px": 0.6291243274952582,
+    "gaussian_noise_sigma_srgb": 1.2927544221310499,
+    "shared_noise_realization": true,
+    "jpeg_quality": null,
+    "mask_scope": "geometric footprint before optical spread"
+  },
+  "damage_enabled": true,
+  "damage_mode_requested": "random",
+  "damage_spatial_mode": "full_canvas",
+  "damage_severity_requested": "medium",
+  "target_qr_damage_ratio": null,
+  "damage_candidate_attempts": 1,
+  "damage_candidate_seed": 4087681546,
+  "qr_damage_ratio_after_capture": 0.11697853288945012,
+  "damage_area_ratio_after_capture": 0.034717559814453125,
+  "damage_random_counts": {
+    "common": [
+      1,
+      2
+    ],
+    "carrier": [
+      0,
+      1
+    ],
+    "method": [
+      0,
+      1
+    ]
+  },
+  "damage_config_path": null,
+  "damage": {
+    "carrier": "木材",
+    "method": "激光雕刻",
+    "spatial_mode": "full_canvas",
+    "damage_roi_xyxy": null,
+    "damage_roi_feather_px": 0,
+    "applied_plan_area_reference": "full_canvas",
+    "severity_default": "medium",
+    "mode": "random",
+    "damage_types": [
+      "oil_stain",
+      "abrasion",
+      "wood_stain",
+      "laser_engrave_groove_fill"
+    ],
+    "damage_categories": [
+      "common",
+      "common",
+      "carrier",
+      "method"
+    ],
+    "damage_layer_count": 4,
+    "damage_area_ratio": 0.035427093505859375,
+    "qr_damage_ratio": 0.11816690962099126,
+    "applied_plan": [
+      {
+        "name": "oil_stain",
+        "category": "common",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.02655792236328125,
+        "params": {
+          "count": 2,
+          "radius_ratio": [
+            0.03,
+            0.11
+          ],
+          "opacity": 0.18296317251791566
+        }
+      },
+      {
+        "name": "abrasion",
+        "category": "common",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.00644683837890625,
+        "params": {
+          "count": 2,
+          "micro_scratch_count": 12,
+          "radius_ratio": [
+            0.018,
+            0.07
+          ],
+          "target_gray": 185,
+          "opacity": 0.4622632870974101
+        }
+      },
+      {
+        "name": "wood_stain",
+        "category": "carrier",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.001842498779296875,
+        "params": {
+          "count": 2,
+          "radius_ratio": [
+            0.015,
+            0.06
+          ],
+          "opacity": 0.6568311574537905
+        }
+      },
+      {
+        "name": "laser_engrave_groove_fill",
+        "category": "method",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.000659942626953125,
+        "params": {
+          "count": 8,
+          "patch_ratio": [
+            0.01,
+            0.05
+          ],
+          "opacity": 0.7171530502723398,
+          "groove_contamination": true
+        }
+      }
+    ],
+    "layers": [
+      {
+        "name": "oil_stain",
+        "category": "common",
+        "area_ratio": 0.02655792236328125,
+        "qr_overlap_ratio": 0.09254282069970846,
+        "params": {
+          "count": 2,
+          "radius_ratio": [
+            0.03,
+            0.11
+          ],
+          "opacity": 0.18296317251791566
+        }
+      },
+      {
+        "name": "abrasion",
+        "category": "common",
+        "area_ratio": 0.00644683837890625,
+        "qr_overlap_ratio": 0.019292091836734693,
+        "params": {
+          "count": 2,
+          "micro_scratch_count": 12,
+          "radius_ratio": [
+            0.018,
+            0.07
+          ],
+          "target_gray": 185,
+          "opacity": 0.4622632870974101
+        }
+      },
+      {
+        "name": "wood_stain",
+        "category": "carrier",
+        "area_ratio": 0.001842498779296875,
+        "qr_overlap_ratio": 0.0028698979591836736,
+        "params": {
+          "count": 2,
+          "radius_ratio": [
+            0.015,
+            0.06
+          ],
+          "opacity": 0.6568311574537905
+        }
+      },
+      {
+        "name": "laser_engrave_groove_fill",
+        "category": "method",
+        "area_ratio": 0.000659942626953125,
+        "qr_overlap_ratio": 0.003940415451895044,
+        "params": {
+          "count": 8,
+          "patch_ratio": [
+            0.01,
+            0.05
+          ],
+          "opacity": 0.7171530502723398,
+          "groove_contamination": true
+        }
+      }
+    ]
+  },
+  "outputs": {
+    "clean_image": "clean_images/000000.png",
+    "damaged_image": "damaged_images/000000.png",
+    "qr_mask": "qr_masks/000000.png",
+    "damage_mask": "damage_masks/000000.png",
+    "visible_change_mask": "visible_change_masks/000000.png",
+    "qr_original": "qr_original/000000.png"
+  }
+}

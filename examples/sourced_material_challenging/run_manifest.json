@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "entry_point": "synthesize_with_damage.py",
+  "arguments": {
+    "config": "configs/combinations.yaml",
+    "output": "_qa_real_material_challenging_transparent",
+    "background_root": "assets/backgrounds_real",
+    "qr_input": "assets/qr_input",
+    "per_combo": 1,
+    "size": 512,
+    "seed": 20261007,
+    "combo_ids": "1,17,29,33,38",
+    "min_contrast": 3.0,
+    "white_module_mode": "transparent",
+    "render_profile": "material",
+    "capture_mode": "challenging",
+    "qr_ecc": "M",
+    "payload_mode": "variable",
+    "payload_alphabet": "alphanumeric",
+    "payload_length_range": "36,96",
+    "qr_source_size": 420,
+    "layout_profile": "closeup",
+    "layout_manifest": null,
+    "allow_undecodable_qr_input": false,
+    "damage_mode": "random",
+    "damage_config": "damage_configs/damage_plan_example.yaml",
+    "damage_severity": "medium",
+    "target_qr_damage_ratio": null,
+    "max_damage_attempts": 32,
+    "damage_spatial_mode": "auto",
+    "damage_common": [
+      1,
+      2
+    ],
+    "damage_carrier": [
+      0,
+      1
+    ],
+    "damage_method": [
+      0,
+      1
+    ],
+    "damage_rules_dir": null,
+    "allow_incompatible": false
+  },
+  "combo_directories": [
+    "01_paper_laser_print",
+    "17_metal_laser_mark",
+    "29_wood_laser_engrave",
+    "33_textile_screen_print",
+    "38_ceramic_screen_print"
+  ],
+  "samples_per_combo": 1,
+  "layout_manifest_sha256": null,
+  "damage_spatial_mode_resolved": "full_canvas"
+}

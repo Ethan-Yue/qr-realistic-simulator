@@ -1,0 +1,6 @@
+﻿combo_id,samples,shape_and_mask_valid,original_decode_rate,original_payload_accuracy,clean_decode_rate,damaged_decode_rate,clean_inverted_decode_rate,damaged_inverted_decode_rate,clean_payload_accuracy,damaged_payload_accuracy,mean_qr_damage_ratio,median_rendered_contrast_ratio,zxing_original_decode_rate,zxing_original_payload_accuracy,zxing_original_inverted_decode_rate,zxing_clean_decode_rate,zxing_clean_payload_accuracy,zxing_clean_inverted_decode_rate,zxing_damaged_decode_rate,zxing_damaged_payload_accuracy,zxing_damaged_inverted_decode_rate
+1,1,1,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,0.037413591406997765,5.5795,1.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,0.0
+17,1,1,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.02427685950413223,7.1987,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+29,1,1,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,0.11648677946929349,6.265,1.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,0.0
+33,1,1,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,0.014359516739210024,8.9915,1.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,0.0
+38,1,1,1.0,1.0,1.0,1.0,0.0,0.0,1.0,1.0,0.057308843121410005,4.0035,1.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,0.0

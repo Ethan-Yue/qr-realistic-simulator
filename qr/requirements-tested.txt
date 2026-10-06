@@ -1,0 +1,7 @@
+# Versions used in the Windows / Python 3.14.2 engineering checks.
+numpy==2.4.1
+opencv-python==5.0.0
+Pillow==12.3.0
+qrcode[pil]==8.2
+PyYAML==6.0.3
+zxing-cpp==3.1.1

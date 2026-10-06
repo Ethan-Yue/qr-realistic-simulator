@@ -1,0 +1,269 @@
+{
+  "paths": [
+    {
+      "path": "examples/sourced_material_mild/17_metal_laser_mark/clean_images/000000.png",
+      "sha256": "efd992b70b90759d8204ba03219fa016658d4adef3da0e504207b9015c399682"
+    },
+    {
+      "path": "examples/sourced_material_mild/17_metal_laser_mark/damaged_images/000000.png",
+      "sha256": "edd27a1eb2e3d3cf64bca1b980e26734ca93bd3266e7ac5924339e551538331b"
+    },
+    {
+      "path": "examples/sourced_material_challenging/17_metal_laser_mark/clean_images/000000.png",
+      "sha256": "cbb458715cfbc2237442543590acce6317ecc11bc82a1d8c43fd3a1a6d0cb2d5"
+    },
+    {
+      "path": "examples/sourced_material_challenging/17_metal_laser_mark/damaged_images/000000.png",
+      "sha256": "d570d106840801c803b3fd4cd3cc22d7f13f3c7453fc68d4c31e3eea92c1bc2b"
+    }
+  ],
+  "same_payload_and_source_crop": true,
+  "mild_capture": {
+    "mode": "mild",
+    "carrier": "metal",
+    "image_size_hw": [
+      512,
+      512
+    ],
+    "perspective_matrix": [
+      [
+        1.0021833181381226,
+        0.008008408360183239,
+        -3.6979947090148926
+      ],
+      [
+        0.0030276302713900805,
+        1.0148403644561768,
+        2.364708185195923
+      ],
+      [
+        9.494538062426727e-06,
+        2.2067741156206466e-05,
+        1.0
+      ]
+    ],
+    "source_corners_xy": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        511.0,
+        0.0
+      ],
+      [
+        511.0,
+        511.0
+      ],
+      [
+        0.0,
+        511.0
+      ]
+    ],
+    "destination_corners_xy": [
+      [
+        -3.6979947090148926,
+        2.364708185195923
+      ],
+      [
+        505.962890625,
+        3.892939805984497
+      ],
+      [
+        504.375244140625,
+        514.2020263671875
+      ],
+      [
+        0.3899051547050476,
+        515.1390991210938
+      ]
+    ],
+    "quad_xy": [
+      [
+        63.902503967285156,
+        78.50072479248047
+      ],
+      [
+        430.3626403808594,
+        79.33577728271484
+      ],
+      [
+        429.8222961425781,
+        447.0394287109375
+      ],
+      [
+        66.30562591552734,
+        447.4825744628906
+      ]
+    ],
+    "lighting": {
+      "ambient": 0.9299785025944766,
+      "gradient_xy": [
+        -0.06514711187731043,
+        0.041829023432339726
+      ],
+      "vignette": 0.0028754204617389236,
+      "white_balance_bgr": [
+        1.0063292980194092,
+        1.0,
+        0.9937105178833008
+      ],
+      "highlight": {
+        "enabled": true,
+        "strength": 0.10701212576981825,
+        "center_xy_fraction": [
+          0.17892619515300703,
+          0.46905261315748836
+        ],
+        "radii_fraction": [
+          0.19306375395804498,
+          0.4247397084264306
+        ],
+        "angle_degrees": -41.250810751341845
+      }
+    },
+    "exposure_ev": 0.0,
+    "strong_glare": {
+      "enabled": false,
+      "strength_linear": 0.0
+    },
+    "motion_blur": {
+      "enabled": false,
+      "length_px": 0,
+      "angle_degrees": null
+    },
+    "near_white_fraction_clean": 0.0,
+    "blur_sigma_px": 0.32193042442387265,
+    "gaussian_noise_sigma_srgb": 1.2858675000632138,
+    "shared_noise_realization": true,
+    "jpeg_quality": null,
+    "mask_scope": "geometric footprint before optical spread"
+  },
+  "challenging_capture": {
+    "mode": "challenging",
+    "carrier": "metal",
+    "image_size_hw": [
+      512,
+      512
+    ],
+    "perspective_matrix": [
+      [
+        1.0073878765106201,
+        0.027806034311652184,
+        -12.708977699279785
+      ],
+      [
+        0.010756777599453926,
+        1.0536069869995117,
+        6.8409504890441895
+      ],
+      [
+        3.334130087750964e-05,
+        7.936728798085824e-05,
+        1.0
+      ]
+    ],
+    "source_corners_xy": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        511.0,
+        0.0
+      ],
+      [
+        511.0,
+        511.0
+      ],
+      [
+        0.0,
+        511.0
+      ]
+    ],
+    "destination_corners_xy": [
+      [
+        -12.708977699279785,
+        6.8409504890441895
+      ],
+      [
+        493.6556396484375,
+        12.130983352661133
+      ],
+      [
+        488.1600036621094,
+        520.7393188476562
+      ],
+      [
+        1.4414455890655518,
+        523.9830932617188
+      ]
+    ],
+    "quad_xy": [
+      [
+        56.40966796875,
+        85.87913513183594
+      ],
+      [
+        419.01873779296875,
+        88.72570037841797
+      ],
+      [
+        417.10791015625,
+        455.6395263671875
+      ],
+      [
+        64.68527221679688,
+        457.2127380371094
+      ]
+    ],
+    "lighting": {
+      "ambient": 0.8234826232938607,
+      "gradient_xy": [
+        -0.14890768429099524,
+        0.09560919641677648
+      ],
+      "vignette": 0.026161615275154836,
+      "white_balance_bgr": [
+        1.018987774848938,
+        1.0,
+        0.9813660383224487
+      ],
+      "highlight": {
+        "enabled": true,
+        "strength": 0.1845036651203763,
+        "center_xy_fraction": [
+          0.17892619515300703,
+          0.46905261315748836
+        ],
+        "radii_fraction": [
+          0.19306375395804498,
+          0.4247397084264306
+        ],
+        "angle_degrees": -41.250810751341845
+      }
+    },
+    "exposure_ev": 1.1922807500568924,
+    "strong_glare": {
+      "enabled": true,
+      "strength_linear": 1.4036591730548278,
+      "center_xy_fraction": [
+        0.7437352937510673,
+        0.6750240012304132
+      ],
+      "angle_degrees": -0.1591714401236004,
+      "model": "elliptical lobe plus narrow streak"
+    },
+    "motion_blur": {
+      "enabled": true,
+      "length_px": 9,
+      "angle_degrees": 81.5122267456604
+    },
+    "near_white_fraction_clean": 0.09241104125976562,
+    "blur_sigma_px": 1.0687355639629272,
+    "gaussian_noise_sigma_srgb": 2.1579139174679005,
+    "shared_noise_realization": true,
+    "jpeg_quality": 84,
+    "mask_scope": "geometric footprint before optical spread"
+  }
+}

@@ -1,0 +1,64 @@
+激光打印:
+  damages: [{name: toner_wear, weight: 1.0}]
+喷墨打印:
+  damages: [{name: inkjet_water_bleed, weight: 1.0}]
+胶印:
+  damages: [{name: offset_ink_scuff, weight: 1.0}]
+热敏打印:
+  damages: [{name: thermal_band_fade, weight: 1.0}]
+热敏:
+  damages: [{name: thermal_band_fade, weight: 1.0}]
+热转印:
+  damages: [{name: thermal_transfer_flake, weight: 1.0}]
+数码喷墨:
+  damages: [{name: digital_inkjet_fade, weight: 1.0}]
+柔版印刷:
+  damages: [{name: flexo_ink_dropout, weight: 1.0}]
+喷码:
+  damages: [{name: spray_dot_dropout, weight: 1.0}]
+贴标签:
+  damages: [{name: thermal_transfer_flake, weight: 1.0}]
+凹版印刷:
+  damages: [{name: gravure_surface_wear, weight: 1.0}]
+UV喷墨:
+  damages: [{name: uv_ink_chip, weight: 1.0}]
+胶印:
+  damages: [{name: offset_ink_scuff, weight: 1.0}]
+数码印刷:
+  damages: [{name: digital_print_fade, weight: 1.0}]
+激光打标:
+  damages: [{name: laser_mark_contrast_loss, weight: 1.0}]
+激光雕刻:
+  damages: [{name: laser_engrave_groove_fill, weight: 1.0}]
+丝网印刷:
+  damages: [{name: screen_ink_crack, weight: 1.0}]
+丝印:
+  damages: [{name: screen_ink_crack, weight: 1.0}]
+UV打印:
+  damages: [{name: uv_ink_chip, weight: 1.0}]
+移印:
+  damages: [{name: pad_print_wear, weight: 1.0}]
+标签贴附:
+  damages: [{name: thermal_transfer_flake, weight: 1.0}]
+激光蚀刻:
+  damages: [{name: laser_etch_surface_fill, weight: 1.0}]
+贴膜/贴纸:
+  damages: [{name: thermal_transfer_flake, weight: 1.0}]
+激光烧灼:
+  damages: [{name: laser_burn_char_wear, weight: 1.0}]
+数码直喷:
+  damages: [{name: digital_inkjet_fade, weight: 1.0}]
+织造/提花:
+  damages: [{name: jacquard_thread_dropout, weight: 1.0}]
+刺绣:
+  damages: [{name: embroidery_stitch_break, weight: 1.0}]
+釉下彩/烧制:
+  damages: [{name: underglaze_chip, weight: 1.0}]
+喷绘:
+  damages: [{name: digital_inkjet_fade, weight: 1.0}]
+写真:
+  damages: [{name: photo_surface_scratch, weight: 1.0}]
+UV卷材打印:
+  damages: [{name: uv_roll_ink_chip, weight: 1.0}]
+LCD/OLED显示:
+  damages: [{name: display_pixel_dropout, weight: 1.0}]

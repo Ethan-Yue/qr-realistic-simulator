@@ -1,0 +1,352 @@
+{
+  "combo_id": 1,
+  "carrier": "paper",
+  "carrier_cn": "普通纸张",
+  "method": "laser_print",
+  "method_cn": "激光打印",
+  "sample_index": 0,
+  "seed": 3950366321,
+  "stage_seeds": {
+    "clean": 3950366321,
+    "damage": 1584805197,
+    "capture": 653858774,
+    "qr": 2523274301
+  },
+  "seed_scheme": "SeedSequence(base_seed, combo_id, sample_index, stage)",
+  "qr_structure": {
+    "version": 4,
+    "error_correction": "H",
+    "border_modules": 4,
+    "payload_length": 37,
+    "module_count_with_border": 41,
+    "source_module_pitch_px": 11,
+    "source_side_px": 451
+  },
+  "payload_mode": "variable",
+  "payload_alphabet": "alphanumeric",
+  "qr_source": "QRDATASET://J/1NXR./Z7LXZGH:JM-T.-5S3",
+  "qr_payload": "QRDATASET://J/1NXR./Z7LXZGH:JM-T.-5S3",
+  "qr_input_info": null,
+  "quad_xy": [
+    [
+      70.13999938964844,
+      64.72000122070312
+    ],
+    [
+      444.739990234375,
+      68.5199966430664
+    ],
+    [
+      441.07000732421875,
+      435.4800109863281
+    ],
+    [
+      75.94999694824219,
+      427.69000244140625
+    ]
+  ],
+  "mask_definition": "qr_masks: QR成码模块的几何范围；damage_masks: 污损算子的几何范围（拍摄几何变换后、光学扩散前）；visible_change_masks: 配对拍摄图像任一通道差值>5的像素范围（含模糊/JPEG扩散）。255=范围内，0=范围外",
+  "visible_change_threshold_u8": 5,
+  "visible_change_area_ratio": 0.043857574462890625,
+  "image_size": [
+    512,
+    512
+  ],
+  "clean_baseline": false,
+  "paired_clean_reference": true,
+  "white_module_mode": "random",
+  "contrast_control": {
+    "qr_color_bgr": [
+      8,
+      8,
+      8
+    ],
+    "background_median_bgr": [
+      238.0,
+      238.0,
+      238.0
+    ],
+    "contrast_ratio": 17.2616,
+    "min_contrast": 3.0,
+    "contrast_passes": true,
+    "rendered_contrast_ratio": 17.064,
+    "rendered_contrast_passes": true,
+    "used_light_plate": false,
+    "background_resample_attempts": 1,
+    "white_module_mode_requested": "random",
+    "white_modules_transparent": true,
+    "white_underlay_type": "none",
+    "white_module_mode_reason": "default_transparent",
+    "render_profile": "material",
+    "surface_coupling": {
+      "surface_family": "toner",
+      "surface_applied": true,
+      "substrate_color_fraction": 0.012,
+      "texture_gain": 2.284,
+      "grain_gain": 0.7613,
+      "edge_sigma_px": 0.36,
+      "edge_min_coverage": 0.94
+    },
+    "background_source": {
+      "source_kind": "background_library_image",
+      "source_path": "paper/042.jpg",
+      "source_sha256": "0fb483b004c5781acf2769333cae524abb0ae54173e8c593173ccaecc8f8003a",
+      "source_size_hw": [
+        768,
+        768
+      ],
+      "crop_xywh": [
+        0,
+        0,
+        768,
+        768
+      ],
+      "output_size_hw": [
+        512,
+        512
+      ]
+    }
+  },
+  "render_profile": "material",
+  "capture": {
+    "mode": "mild",
+    "carrier": "paper",
+    "image_size_hw": [
+      512,
+      512
+    ],
+    "perspective_matrix": [
+      [
+        1.0063658952713013,
+        0.021179359406232834,
+        -4.511651515960693
+      ],
+      [
+        0.008234463632106781,
+        1.018608570098877,
+        0.08449721336364746
+      ],
+      [
+        -3.104233474005014e-05,
+        7.043289224384353e-05,
+        1.0
+      ]
+    ],
+    "source_corners_xy": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        511.0,
+        0.0
+      ],
+      [
+        511.0,
+        511.0
+      ],
+      [
+        0.0,
+        511.0
+      ]
+    ],
+    "destination_corners_xy": [
+      [
+        -4.511651515960693,
+        0.08449721336364746
+      ],
+      [
+        517.95751953125,
+        4.361493110656738
+      ],
+      [
+        510.29254150390625,
+        514.4462280273438
+      ],
+      [
+        6.091752052307129,
+        502.50762939453125
+      ]
+    ],
+    "quad_xy": [
+      [
+        70.13508605957031,
+        64.71743774414062
+      ],
+      [
+        444.7449645996094,
+        68.52223205566406
+      ],
+      [
+        441.07269287109375,
+        435.4781188964844
+      ],
+      [
+        75.94794464111328,
+        427.69183349609375
+      ]
+    ],
+    "lighting": {
+      "ambient": 1.0656349497402358,
+      "gradient_xy": [
+        -0.04845262808557908,
+        -0.04803719080383021
+      ],
+      "vignette": 0.029199380695448227,
+      "white_balance_bgr": [
+        1.0022995471954346,
+        1.0,
+        0.9977056980133057
+      ],
+      "highlight": {
+        "enabled": false,
+        "strength": 0.0
+      }
+    },
+    "blur_sigma_px": 0.4657130313073019,
+    "gaussian_noise_sigma_srgb": 1.0121077415911084,
+    "shared_noise_realization": true,
+    "jpeg_quality": null,
+    "mask_scope": "geometric footprint before optical spread"
+  },
+  "damage_enabled": true,
+  "damage_mode_requested": "random",
+  "damage_severity_requested": "medium",
+  "damage_random_counts": {
+    "common": [
+      1,
+      2
+    ],
+    "carrier": [
+      0,
+      1
+    ],
+    "method": [
+      0,
+      1
+    ]
+  },
+  "damage_config_path": null,
+  "damage": {
+    "carrier": "普通纸张",
+    "method": "激光打印",
+    "severity_default": "medium",
+    "mode": "random",
+    "damage_types": [
+      "oil_stain",
+      "water_stain",
+      "paper_fiber_loss"
+    ],
+    "damage_categories": [
+      "common",
+      "common",
+      "carrier"
+    ],
+    "damage_layer_count": 3,
+    "damage_area_ratio": 0.039340972900390625,
+    "qr_damage_ratio": 0.1057468694096601,
+    "applied_plan": [
+      {
+        "name": "oil_stain",
+        "category": "common",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.01641845703125,
+        "params": {
+          "count": 2,
+          "radius_ratio": [
+            0.03,
+            0.11
+          ],
+          "opacity": 0.2922525674490812
+        }
+      },
+      {
+        "name": "water_stain",
+        "category": "common",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.016357421875,
+        "params": {
+          "count": 1,
+          "radius_ratio": [
+            0.025,
+            0.09
+          ],
+          "ring_width_px": 5
+        }
+      },
+      {
+        "name": "paper_fiber_loss",
+        "category": "carrier",
+        "instance_index": 0,
+        "severity": "medium",
+        "area_ratio": 0.007923126220703125,
+        "params": {
+          "count": 2,
+          "micro_scratch_count": 12,
+          "radius_ratio": [
+            0.018,
+            0.07
+          ],
+          "target_gray": 185,
+          "opacity": 0.2663321574714127
+        }
+      }
+    ],
+    "layers": [
+      {
+        "name": "oil_stain",
+        "category": "common",
+        "area_ratio": 0.01641845703125,
+        "qr_overlap_ratio": 0.03685152057245081,
+        "params": {
+          "count": 2,
+          "radius_ratio": [
+            0.03,
+            0.11
+          ],
+          "opacity": 0.2922525674490812
+        }
+      },
+      {
+        "name": "water_stain",
+        "category": "common",
+        "area_ratio": 0.016357421875,
+        "qr_overlap_ratio": 0.04917262969588551,
+        "params": {
+          "count": 1,
+          "radius_ratio": [
+            0.025,
+            0.09
+          ],
+          "ring_width_px": 5
+        }
+      },
+      {
+        "name": "paper_fiber_loss",
+        "category": "carrier",
+        "area_ratio": 0.007923126220703125,
+        "qr_overlap_ratio": 0.026721824686940968,
+        "params": {
+          "count": 2,
+          "micro_scratch_count": 12,
+          "radius_ratio": [
+            0.018,
+            0.07
+          ],
+          "target_gray": 185,
+          "opacity": 0.2663321574714127
+        }
+      }
+    ]
+  },
+  "outputs": {
+    "clean_image": "clean_images/000000.png",
+    "damaged_image": "damaged_images/000000.png",
+    "qr_mask": "qr_masks/000000.png",
+    "damage_mask": "damage_masks/000000.png",
+    "visible_change_mask": "visible_change_masks/000000.png",
+    "qr_original": "qr_original/000000.png"
+  }
+}

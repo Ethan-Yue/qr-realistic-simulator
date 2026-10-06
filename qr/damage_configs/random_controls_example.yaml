@@ -1,0 +1,33 @@
+# 随机混合模式：仍由载体/成码规则抽取，但可逐个污损关闭、改权重和改内部参数。
+mode: random
+severity: medium
+common_count: [1, 3]
+carrier_count: [0, 2]
+method_count: [0, 1]
+damage_controls:
+  dust:
+    enabled: true
+    weight: 1.5
+    probability: 0.90
+    instances: 1
+    params:
+      count: 80
+      radius_px: [1, 2]
+      opacity: 0.25
+  scratch:
+    enabled: true
+    weight: 1.2
+    params:
+      count: 4
+      width_px: [1, 2]
+      length_ratio: [0.06, 0.22]
+  mud:
+    enabled: false
+  sticker:
+    enabled: false
+  water_stain:
+    enabled: true
+    probability: 0.35
+    params:
+      count: 1
+      radius_ratio: [0.03, 0.08]

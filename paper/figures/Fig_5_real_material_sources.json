@@ -1,0 +1,46 @@
+[
+  {
+    "row": "a",
+    "combination": "01_paper_laser_print",
+    "source_path": "qr/assets/backgrounds_real/paper/wikimedia_old_paper_texture.jpg",
+    "source_sha256": "c7e43f042fb79b7437ecc5970933d7c62921ac9b1951321c3a6bacf4e459b99b",
+    "clean_path": "examples/sourced_material_mild/01_paper_laser_print/clean_images/000000.png",
+    "clean_sha256": "894d2a9ef850794dada899893d00e8065a967b98726ddb117e5cf6d213bc9085",
+    "damaged_path": "examples/sourced_material_mild/01_paper_laser_print/damaged_images/000000.png",
+    "damaged_sha256": "2064fe4f6b3de1b52ed7b1c60a8c2f9ba21724d1a3a6f9b9787f3b5ba51e2299",
+    "metadata_sha256": "46fc582565561a2ff300b78f72abc8779b0675eba460fe3aacb8f55ccf79697c"
+  },
+  {
+    "row": "b",
+    "combination": "17_metal_laser_mark",
+    "source_path": "qr/assets/backgrounds_real/metal/polyhaven_metal_plate_02_diff_1k.jpg",
+    "source_sha256": "6e80877d0e9d5973d96298c6091df7ace906b0a6760afc4f3592e4855f3f1d4c",
+    "clean_path": "examples/sourced_material_mild/17_metal_laser_mark/clean_images/000000.png",
+    "clean_sha256": "efd992b70b90759d8204ba03219fa016658d4adef3da0e504207b9015c399682",
+    "damaged_path": "examples/sourced_material_mild/17_metal_laser_mark/damaged_images/000000.png",
+    "damaged_sha256": "edd27a1eb2e3d3cf64bca1b980e26734ca93bd3266e7ac5924339e551538331b",
+    "metadata_sha256": "8a7441ba28293b10c03965c98e02925ec866740a0dde10588ed7c4b14331b285"
+  },
+  {
+    "row": "c",
+    "combination": "29_wood_laser_engrave",
+    "source_path": "qr/assets/backgrounds_real/wood/polyhaven_ash_veneer_diff_1k.jpg",
+    "source_sha256": "13fd87c8b0a5cc1d4e408fb75b3eb629417ea6b1aaf1672b5adf993640486673",
+    "clean_path": "examples/sourced_material_mild/29_wood_laser_engrave/clean_images/000000.png",
+    "clean_sha256": "fa758addc557f68eb0bde1144bf95f773f11d703fc8783d6e79926584010a07a",
+    "damaged_path": "examples/sourced_material_mild/29_wood_laser_engrave/damaged_images/000000.png",
+    "damaged_sha256": "4731ce78c2a2921775d60ff9beed8fc7cf7b584464255e589336bf8d7cfe0699",
+    "metadata_sha256": "a5a5c476cd57a9b60dd0866c8574281b410f2530cf802a0df051604844850a2f"
+  },
+  {
+    "row": "d",
+    "combination": "33_textile_screen_print",
+    "source_path": "qr/assets/backgrounds_real/textile/polyhaven_cotton_jersey_diff_1k.jpg",
+    "source_sha256": "0f1b790e4087223275aaa6fdffdd46a556a26d2af72cd811acf72ba9c21ec1f6",
+    "clean_path": "examples/sourced_material_mild/33_textile_screen_print/clean_images/000000.png",
+    "clean_sha256": "8531766246c9ededc087595362f049e954b43d984bdade4a19d7800fb5baebff",
+    "damaged_path": "examples/sourced_material_mild/33_textile_screen_print/damaged_images/000000.png",
+    "damaged_sha256": "5f36f86758b9d99cefacfbe1f722d04bc9cefc280b19dd7b20a0a3b1a4d331ec",
+    "metadata_sha256": "293a60831af9cc4d3144b54982ecf45e809fcb9db3de914993a4833fb8690412"
+  }
+]
